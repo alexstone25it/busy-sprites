@@ -1,0 +1,13 @@
+/*display*/
+.withFlexCol {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.with2X2Grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+/*extras*/
+.centerText {
+  text-align: center;
+}

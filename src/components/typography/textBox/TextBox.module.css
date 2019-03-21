@@ -1,0 +1,20 @@
+.text {
+  width: calc(100% - 3rem);
+
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+
+  font-size: 1.8rem;
+  font-weight: bolder;
+  letter-spacing: 0.7rem;
+  line-height: 4rem;
+  text-align: center;
+  text-shadow: 0px 2px 10px rgb(31, 6, 252);
+  text-transform: uppercase;
+
+  margin: 3rem auto;
+  padding: 3rem;
+  border: 1px solid rgb(143, 135, 106);
+  border-radius: 10px;
+  box-shadow: 1px 1px 20px 15px rgba(31, 6, 252, 0.8);
+}

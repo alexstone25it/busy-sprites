@@ -1,0 +1,55 @@
+/*display*/
+.withFlexCol {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-items: center;
+}
+/*font*/
+.withBiggestSerif {
+  font-family: "Roboto Slab", serif;
+  font-weight: 900;
+  font-size: 3rem;
+  letter-spacing: 1.5rem;
+  line-height: 4rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 3%;
+}
+.withBigSerif {
+  font-family: "Roboto Slab", serif;
+  font-weight: 900;
+  font-size: 2.2rem;
+  letter-spacing: 0.6rem;
+  text-transform: uppercase;
+
+  margin: 6%;
+}
+.withMediumSansSerif {
+  font-family: "Roboto Slab", serif;
+  font-weight: 900;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  margin: 3% 6%;
+}
+/*color*/
+.withBlack {
+  color: rgb(0, 0, 0);
+}
+.withWhite {
+  color: rgb(255, 255, 255);
+}
+.withBlue {
+  color: rgb(31, 6, 252);
+}
+/*extras*/
+.withFarAwayShadow {
+  text-shadow: 1px 1px 1px rgb(37, 37, 37),
+    -85px -10px 5px rgba(31, 6, 252, 0.3);
+}
+.withShadow {
+  text-shadow: 3px 5px 1px rgb(37, 37, 37), -3px -3px 5px rgb(31, 6, 252);
+}
+.withBlueShadow {
+  text-shadow: 0px 3px 2px rgb(31, 6, 252);
+}

@@ -1,0 +1,11 @@
+.shade {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(31, 6, 252, 0.3);
+}
+.transparent {
+  background-color: transparent;
+}

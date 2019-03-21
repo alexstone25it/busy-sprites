@@ -1,0 +1,26 @@
+@media (min-width: 630px) {
+  .gridA {
+    display: grid;
+    grid-template-columns: 20% 80%;
+  }
+  .gridANav {
+    grid-row: 1 / 5;
+    grid-column: 1 / 2;
+  }
+  .gridAMissionStatement {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+  }
+  .gridAHeader {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+  }
+  .gridAMainContent {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+  }
+  .gridAFooter {
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+  }
+}

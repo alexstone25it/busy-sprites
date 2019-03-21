@@ -1,0 +1,11 @@
+.wrapper {
+  width: 75%;
+  height: 6rem;
+  display: flex;
+  flex-direction: row;
+
+  margin: 1% auto;
+}
+.wrapper h3 {
+  margin: 3%;
+}

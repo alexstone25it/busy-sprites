@@ -1,0 +1,23 @@
+.info {
+  position: fixed;
+  top: 25%;
+  left: 37%;
+  font-size: 1.8rem;
+  color: rgb(37, 37, 37);
+  width: 50%;
+  animation: fadeIn 2s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media (min-width: 630px) {
+  .info {
+    top: 25%;
+    left: 45%;
+  }
+}

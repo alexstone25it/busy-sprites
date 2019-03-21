@@ -1,0 +1,19 @@
+.container {
+  position: relative;
+}
+.bgPic {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  background: rgb(31, 6, 252);
+  background: linear-gradient(rgba(31, 6, 252, 0.3), rgba(31, 6, 252, 0.3)),
+    url("./images/tech.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  padding: 6%;
+}

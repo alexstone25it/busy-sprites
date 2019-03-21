@@ -1,0 +1,82 @@
+.box {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+
+  width: calc(100% - 3rem);
+
+  text-align: center;
+
+  margin: 3rem auto;
+  padding: 3rem 1.5rem;
+  border: 1px solid rgb(143, 135, 106);
+  border-radius: 10px;
+}
+.heading {
+  width: calc(100% - 6rem);
+
+  background-color: rgb(98, 78, 6);
+  color: rgb(255, 255, 255);
+
+  font-family: "Roboto Slab", serif;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 0px 2px 10px rgb(31, 6, 252);
+  letter-spacing: 0.7rem;
+  line-height: 4rem;
+
+  margin: 3rem auto;
+  border: 1px solid rgb(37, 37, 37);
+  border-radius: 10px;
+  box-shadow: 1px 1px 20px 15px rgb(241, 241, 221);
+}
+.text {
+  color: rgb(255, 255, 255);
+
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  font-weight: bolder;
+  letter-spacing: 0.3rem;
+  line-height: 2.5rem;
+  text-shadow: -1px -1px 1px rgb(0, 0, 0), 1px 1px 1px rgb(0, 0, 0);
+
+  padding: 1.5rem;
+  margin: 3rem auto;
+}
+
+.imgMeeting {
+  background: linear-gradient(rgba(31, 6, 252, 0.3), rgba(27, 2, 248, 0.3)),
+    url(./images/meeting.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.imgLaptop {
+  background: linear-gradient(rgba(31, 6, 252, 0.3), rgba(27, 2, 248, 0.3)),
+    url(./images/laptop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.imgCode {
+  background: linear-gradient(rgba(31, 6, 252, 0.3), rgba(27, 2, 248, 0.3)),
+    url(./images/code.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.imgMotherboard {
+  background: linear-gradient(rgba(31, 6, 252, 0.3), rgba(27, 2, 248, 0.3)),
+    url(./images/motherboard.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.imgOffice {
+  background: linear-gradient(rgba(31, 6, 252, 0.3), rgba(27, 2, 248, 0.3)),
+    url(./images/office.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
