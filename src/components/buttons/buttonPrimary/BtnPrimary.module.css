@@ -1,4 +1,4 @@
-.general {
+.primary {
   display: inline-block;
 
   background: radial-gradient(rgb(143, 135, 106), rgb(98, 78, 6));
@@ -12,45 +12,48 @@
   border-radius: 30px;
   box-shadow: 1px 5px 10px rgba(31, 6, 252, 0.8);
   outline: none;
+  margin: auto;
 
   cursor: pointer;
   transition: all 0.3s linear;
 }
-.general:focus,
-.general:hover {
-  background: radial-gradient(rgb(98, 78, 6), rgb(98, 78, 6));
+.smallSquare {
+  font-size: 1.4rem;
+  padding: 1rem;
+  margin: 3rem;
 }
-
-.general:active {
-  color: rgb(255, 255, 255);
-  background: radial-gradient(rgb(98, 78, 6), rgb(98, 78, 6));
-  border: 3px solid rgb(98, 78, 6);
-  box-shadow: none;
-}
-.fatOblong {
+.fatLong {
   width: 80%;
   font-size: 2.2rem;
   letter-spacing: 0.7rem;
   padding: 3rem;
-  margin: 1.5rem;
+  margin: 1.5rem auto;
 }
-.fatOblong:focus,
-.fatOblong:hover {
-  box-shadow: 1px 10px 15px rgb(31, 6, 252);
-}
-.thinOblong {
+.thinLong {
   font-size: 1.8rem;
   letter-spacing: 0.3rem;
   line-height: 3rem;
   padding: 1.5rem;
   margin: 3rem auto;
 }
-.thinOblong:focus,
-.thinOblong:hover {
-  box-shadow: 1px 7px 12px rgb(241, 241, 221);
+.brown:focus,
+.brown:hover {
+  background: radial-gradient(rgb(98, 78, 6), rgb(98, 78, 6));
 }
-.smallSquare {
-  font-size: 1.4rem;
-  padding: 1rem;
-  margin: 3rem;
+
+.primary:active {
+  color: rgb(255, 255, 255);
+  background: radial-gradient(rgb(98, 78, 6), rgb(98, 78, 6));
+  border: 3px solid rgb(98, 78, 6);
+  box-shadow: none;
+}
+
+.blue:focus,
+.blue:hover {
+  box-shadow: 1px 10px 15px rgb(31, 6, 252);
+}
+
+.white:focus,
+.white:hover {
+  box-shadow: 1px 7px 12px rgb(241, 241, 221);
 }

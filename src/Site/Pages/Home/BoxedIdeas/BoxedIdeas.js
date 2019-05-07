@@ -6,7 +6,7 @@ import styles, {
   imgMotherboard,
   imgOffice
 } from "./BoxedIdeas.module.css";
-import Button from "../../../../components/buttons/button/Button";
+import BtnPrimary from "../../../../components/buttons/buttonPrimary/BtnPrimary";
 
 const BoxedIdeas = props => {
   const ideaArray = [
@@ -73,13 +73,13 @@ const BoxedIdeas = props => {
           <p className={styles.text} key={idea.id2}>
             {idea.statement}
           </p>
-          <Button
-            type="general"
-            extras="thinOblong"
+          <BtnPrimary
+            diffs="thinLong"
+            shadow="white"
             onClick={props.onClick(idea)}
           >
             Learn more
-          </Button>
+          </BtnPrimary>
         </div>
       ))}
     </div>

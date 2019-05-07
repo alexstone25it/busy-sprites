@@ -2,9 +2,10 @@ import React from "react";
 
 import Main from "../../../components/wrappers/Main";
 
-import TextBox from "../../../components/typography/textBox/TextBox";
-import UnboxedText from "../../../components/typography/unboxedText/UnboxedText";
-import Button from "../../../components/buttons/button/Button";
+import BlueWrapper from "../../../components/wrappers/BlueWrapper";
+import EmphasisTxt from "../../../components/typography/text/EmphasisTxt";
+import PrimaryTxt from "../../../components/typography/text/PrimaryTxt";
+import BtnPrimary from "../../../components/buttons/buttonPrimary/BtnPrimary";
 import Shading from "./shading/Shading";
 
 const Home = () => {
@@ -17,13 +18,15 @@ const Home = () => {
   };
   return (
     <Main display="withflexCol" extras="centerText">
-      <TextBox>{textOf.textBox}</TextBox>
-      <UnboxedText>{textOf.unboxedTextTop}</UnboxedText>
+      <BlueWrapper>
+        <EmphasisTxt>{textOf.textBox}</EmphasisTxt>
+      </BlueWrapper>
+      <PrimaryTxt>{textOf.unboxedTextTop}</PrimaryTxt>
       <Shading />
-      <UnboxedText>{textOf.unboxedTextBottom}</UnboxedText>
-      <Button type="general" extras="fatOblong">
+      <PrimaryTxt>{textOf.unboxedTextBottom}</PrimaryTxt>
+      <BtnPrimary diffs="fatLong" shadow="blue">
         {textOf.btnText}
-      </Button>
+      </BtnPrimary>
     </Main>
   );
 };

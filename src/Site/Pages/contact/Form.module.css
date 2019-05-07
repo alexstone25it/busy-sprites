@@ -1,0 +1,18 @@
+.formBox {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-bottom: 1rem;
+}
+.formBox label {
+  font-size: 1.6rem;
+  margin: 0.5rem;
+}
+.formBox input {
+  border: 1px solid rgb(31, 6, 252);
+}
+.formBox input:valid {
+  border: 1px solid green;
+}
+.formBox input:invalid {
+  border: 1px solid red;
+}

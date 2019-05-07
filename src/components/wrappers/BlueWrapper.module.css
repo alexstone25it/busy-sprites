@@ -1,16 +1,7 @@
-.text {
+.wrapper {
   width: calc(100% - 3rem);
 
   background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-
-  font-size: 1.8rem;
-  font-weight: bolder;
-  letter-spacing: 0.7rem;
-  line-height: 4rem;
-  text-align: center;
-  text-shadow: 0px 2px 10px rgb(31, 6, 252);
-  text-transform: uppercase;
 
   margin: 3rem auto;
   padding: 3rem;

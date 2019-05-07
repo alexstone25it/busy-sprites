@@ -10,6 +10,8 @@ import SecondaryHeader from "../site/header/secondaryHeader/SecondaryHeader";
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
 import Services from "./pages/services/Services";
+import Contact from "./pages/contact/Contact";
+
 import Footer from "./footer/Footer";
 
 class Site extends Component {
@@ -30,6 +32,7 @@ class Site extends Component {
               <Route path="/" exact component={Home} />
               <Route path="/about" exact component={About} />
               <Route path="/services" exact component={Services} />
+              <Route path="/contact" exact component={Contact} />
             </Switch>
             <Route path="/" component={Footer} />
           </div>
@@ -46,6 +49,7 @@ class Site extends Component {
             <Route path="/" exact component={Home} />
             <Route path="/about" exact component={About} />
             <Route path="/services" exact component={Services} />
+            <Route path="/contact" exact component={Contact} />
           </Switch>
           <Route path="/" component={Footer} />
         </div>

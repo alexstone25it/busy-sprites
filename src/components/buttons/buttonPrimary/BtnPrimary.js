@@ -1,13 +1,13 @@
 import React from "react";
-import styles from "./Button.module.css";
+import styles from "./BtnPrimary.module.css";
 
 const Button = props => {
   return (
     <button
       className={[
-        styles[props.type],
-        styles[props.color],
-        styles[props.extras]
+        styles.primary,
+        [styles[props.shadow]],
+        styles[props.diffs]
       ].join(" ")}
       onClick={props.onClick}
     >
