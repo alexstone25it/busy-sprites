@@ -1,0 +1,136 @@
+.nav {
+  position: fixed;
+
+  width: 100%;
+
+  background-color: rgb(37, 37, 37);
+
+  z-index: 1;
+}
+.btnWrapper {
+  position: fixed;
+
+  padding: 1rem;
+  margin-left: 80%;
+  z-index: 2;
+}
+.btnWrapper button {
+  background: transparent;
+  color: rgb(255, 255, 255);
+
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 5rem;
+}
+.nav ul {
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  height: 60%;
+
+  color: rgb(255, 255, 255);
+
+  background-color: rgb(37, 37, 37);
+  color: rgb(255, 255, 255);
+
+  font-size: 2rem;
+
+  padding: 5rem;
+
+  z-index: 1;
+}
+.nav ul li {
+  width: 80%;
+  font-family: inherit;
+  background-color: rgb(37, 37, 37);
+  color: rgb(255, 255, 255);
+  text-align: left;
+  padding: 2rem;
+  margin: auto;
+  border-bottom: 1px dotted rgba(143, 135, 106, 0.5);
+
+  list-style-type: none;
+  z-index: 2;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.nav ul li {
+  border-bottom: 1px dotted rgb(255, 255, 255);
+  animation: drop 1s linear;
+  backface-visibility: hidden;
+}
+.nav ul li a {
+  color: rgb(255, 255, 255);
+}
+.nav ul li a:hover {
+  text-transform: uppercase;
+}
+.nav ul li a.active {
+  color: rgb(31, 6, 252);
+}
+
+#ulSlideDown {
+  animation: down 0.8s linear;
+}
+#slideUp {
+  animation: up 1s linear;
+}
+@keyframes down {
+  0% {
+    height: 0%;
+  }
+  50% {
+    height: 48%;
+  }
+  100% {
+    height: 48%;
+  }
+}
+@keyframes drop {
+  0% {
+    transform: translateY(-35rem);
+  }
+  100% {
+    transform: translateY(-0rem);
+  }
+}
+@keyframes up {
+  0% {
+    height: 48%;
+  }
+  100% {
+    height: 0%;
+  }
+}
+
+.logoBox {
+  text-align: center;
+}
+.logoTxt {
+  position: fixed;
+  top: 2rem;
+  left: 1rem;
+
+  color: rgb(255, 255, 255);
+
+  font-family: "Roboto Slab", serif;
+  font-size: 1.8rem;
+  letter-spacing: 0.3rem;
+  line-height: 3rem;
+  text-shadow: 3px 5px 1px rgb(37, 37, 37), -3px -3px 5px rgb(31, 6, 252);
+  text-transform: uppercase;
+
+  transform: skewY(-25deg);
+  opacity: 1;
+}
+.logoBoxOnScrolling {
+  line-height: 2.5rem;
+  top: 0rem;
+  transform: skew(0deg);
+  width: 100%;
+  padding: 0;
+}

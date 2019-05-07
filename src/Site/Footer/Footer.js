@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./Footer.module.css";
 
-import BusinessAddress from "./components/BusinessAddress/BusinessAddress";
-import IconsBox from "./components/Icons/IconsBox";
+import BusinessAddress from "./components/businessAddress/BusinessAddress";
+import IconsBox from "../../assets/icons/IconsBox";
 
 const Footer = () => {
   return (

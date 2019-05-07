@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 
-import Main from "../../../containers/major/Main";
+import Main from "../../../components/wrappers/Main";
 import H2 from "../../../components/typography/headings/H2";
 import Brand from "../../../components/typography/branding/Brand";
 import TextBox from "../../../components/typography/textBox/TextBox";
-import Specialisms from "./Specialisms/Specialisms";
+import Specialisms from "./specialisms/Specialisms";
 
 class Services extends Component {
   render() {

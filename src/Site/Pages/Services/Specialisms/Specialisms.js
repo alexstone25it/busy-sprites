@@ -1,29 +1,23 @@
 import React, { Component, Fragment } from "react";
-import Div from "../../../../containers/major/Div";
-import Specialism from "./Specialism/Specialism";
-import SkillPaper from "./SkillPapers/SkillPaper";
+import Div from "../../../../components/wrappers/Div";
+import Specialism from "./specialism/Specialism";
+import SkillPaper from "./skillPapers/SkillPaper";
 
 class Specialisms extends Component {
   state = {
     hidden: true,
-    currSkillSet: {},
-    skillSetsShowing: []
+    skillSet: {}
   };
-  addSkillSetHandler = e => item => {
-    let sets = [...this.state.skillSetsShowing];
-    if (this.state.skillSetsShowing.length < 1) {
-      sets.unshift(e);
-    } else {
-      let ids = sets.map(item => item.id);
-      let duplicate = ids.map(item => item === e.id);
-      if (!duplicate.includes(true)) {
-        sets.unshift(e);
-      }
-    }
+  addSkillSetHandler = item => {
     this.setState({
-      hidden: false,
-      currSkillSet: e,
-      skillSetsShowing: sets
+      skillSet: item,
+      hidden: false
+    });
+  };
+  minusSkillSetHandler = () => {
+    this.setState({
+      skillSet: {},
+      hidden: true
     });
   };
   render() {
@@ -60,21 +54,18 @@ class Specialisms extends Component {
       }
     ];
     return (
-      <Div>
-        {skillsArray.map(item => (
-          <Fragment key={item.id}>
+      <Div display="withFlexCol">
+        {skillsArray.map(skill => (
+          <Fragment key={skill.id}>
             <Specialism
-              skill={item}
+              item={skill}
               addSkillSet={this.addSkillSetHandler}
-              currSkillSet={this.state.currSkillSet}
-              skillSetsShowing={this.state.skillSetsShowing}
+              skillset={this.state.skillSet}
+              minusSkillSet={this.minusSkillSetHandler}
             />
-
-            <SkillPaper
-              skillSetsShowing={this.state.skillSetsShowing}
-              skill={item}
-              hidden={this.state.hidden}
-            />
+            {!this.state.hidden && skill.id === this.state.skillSet.id ? (
+              <SkillPaper item={skill} skillset={this.state.skillSet} />
+            ) : null}
           </Fragment>
         ))}
       </Div>

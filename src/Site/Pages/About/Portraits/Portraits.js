@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import styles from "./Portraits.module.css";
 
-import Portrait from "./Portrait/Portrait";
+import Portrait from "./portrait/Portrait";
 
 class Portraits extends Component {
   render() {

@@ -1,4 +1,4 @@
-.menuBox {
+.btnWrapper {
   position: fixed;
   top: 1rem;
   right: 1rem;
@@ -22,14 +22,14 @@
   cursor: pointer;
 }
 
-.menuBox:hover,
-.menuBox:focus {
+.btnWrapper:hover,
+.btnWrapper:focus {
   box-shadow: 0px 3px 8px 5px rgb(241, 241, 221);
 }
-.menuBoxClicked {
+.btnWrapperClicked {
   display: none;
 }
-.menu {
+.btn {
   background-color: rgb(37, 37, 37);
   color: rgb(255, 255, 255);
 

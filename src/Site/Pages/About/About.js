@@ -2,12 +2,12 @@ import React from "react";
 
 import H2 from "../../../components/typography/headings/H2";
 import H3 from "../../../components/typography/headings/H3";
-import Main from "../../../containers/major/Main";
-import Section from "../../../containers/major/Section";
+import Main from "../../../components/wrappers/Main";
+import Section from "../../../components/wrappers/Section";
 import TextBox from "../../../components/typography/textBox/TextBox";
 import UnboxedText from "../../../components/typography/unboxedText/UnboxedText";
-import Portraits from "./Portraits/Portraits";
-import PicSet from "./PicSet/PicSet";
+import Portraits from "./portraits/Portraits";
+import PicSet from "./picSet/PicSet";
 
 const About = () => (
   <Main>

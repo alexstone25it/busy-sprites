@@ -1,14 +1,14 @@
 import React from "react";
 import styles from "./IconsBox.module.css";
-import SvgFacebook from "./svg/Facebook/Facebook";
-import SvgLinkedIn from "./svg/LinkedIn/LinkedIn";
-import SvgTwitter from "./svg/Twitter/Twitter";
+import SvgFacebook from "./svg/facebook/Facebook";
+import SvgLinkedIn from "./svg/linkedIn/LinkedIn";
+import SvgTwitter from "./svg/twitter/Twitter";
 
 const IconsBox = () => {
   return (
-    <div className={styles.iconsOuterBox}>
+    <div className={styles.iconsWrapper}>
       <p className={styles.iconsTxt}>Social Media</p>
-      <div className={styles.iconsInnerBox}>
+      <div className={styles.iconsInnerWrapper}>
         <SvgFacebook />
         <SvgTwitter />
         <SvgLinkedIn />

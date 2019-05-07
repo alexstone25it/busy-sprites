@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./BackText.module.css";
 
-import Button from "../../../../components/buttons/Button/Button";
+import Button from "../../../../components/buttons/button/Button";
 
 const BackText = props => {
   const tar = props.target;

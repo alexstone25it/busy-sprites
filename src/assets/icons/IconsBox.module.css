@@ -1,4 +1,4 @@
-.iconsOuterBox {
+.iconsWrapper {
   text-align: center;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
@@ -10,7 +10,7 @@
   color: rgb(255, 255, 255);
 }
 
-.iconsInnerBox {
+.iconsInnerWrapper {
   display: flex;
   justify-content: center;
   margin: auto;

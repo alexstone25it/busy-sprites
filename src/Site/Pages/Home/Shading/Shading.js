@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import styles from "./Shading.module.css";
 
-import BoxedIdeas from "../BoxedIdeas/BoxedIdeas";
-import BackText from "../BackText/BackText";
+import BoxedIdeas from "../boxedIdeas/BoxedIdeas";
+import BackText from "../backText/BackText";
 
 class Shading extends Component {
   state = {

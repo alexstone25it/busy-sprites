@@ -1,24 +1,7 @@
-.logoBox {
-  text-align: center;
-}
-@media (min-width: 630px) {
-  .logoBox {
-    position: fixed;
-    top: 5rem;
-    z-index: 1;
-  }
-}
-@media (min-width: 900px) {
-  .logoBox {
-    font-size: 2.2rem;
-  }
-}
-.logoBoxOnScrolling {
-  line-height: 2.5rem;
-  top: 0rem;
-  transform: skew(0deg);
-  width: 100%;
-  padding: 0;
+.logoTxt {
+  position: fixed;
+  top: 2rem;
+  left: 1rem;
 }
 .logoTxt {
   color: rgb(255, 255, 255);
@@ -33,15 +16,19 @@
   transform: skewY(-25deg);
   opacity: 1;
 }
-@media (max-width: 629) {
-  .logoTxt {
-    position: fixed;
-    top: 2rem;
-    left: 1rem;
+@media (min-width: 600px) {
+  .logoWrapper {
+    top: 5rem;
+
+    text-align: center;
+
+    z-index: 1;
   }
 }
-@media (min-width: 900) {
-  .logoTxt {
-    margin-top: 3rem;
-  }
+.logoBoxOnScrolling {
+  line-height: 2.5rem;
+  top: 0rem;
+  transform: skew(0deg);
+  width: 100%;
+  padding: 0;
 }

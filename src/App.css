@@ -1,9 +1,10 @@
 .App {
   font-family: "Roboto", sans-serif;
 }
-@media (min-width: 630px) {
-  .App {
-    display: grid;
-    grid-template-columns: 20% 80%;
-  }
+
+.custom-txt-white {
+  color: rgb(255, 255, 255);
+}
+.custom-txt-blue {
+  color: rgb(31, 6, 252);
 }

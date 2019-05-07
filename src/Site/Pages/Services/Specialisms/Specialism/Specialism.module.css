@@ -20,13 +20,18 @@
 }
 .item:hover,
 .item:focus {
-  transform: translateY(-20px);
-  border-top: 1px solid rgb(37, 37, 37);
-  box-shadow: -1px -15px 20px rgb(31, 6, 252);
+  border-bottom: 1px solid rgb(37, 37, 37);
 }
-.itemPlay {
+.itemChosen {
+  display: flex;
+  text-align: center;
+
+  margin: 1.5rem 1.5rem 0 1.5rem;
   border-top: 1px solid rgb(37, 37, 37);
-  box-shadow: -1px -15px 25px rgb(31, 6, 252);
+  box-shadow: -1px -10px 25px rgb(31, 6, 252);
+
+  cursor: pointer;
+
   animation: paperUp 2s;
 }
 @keyframes paperUp {
@@ -49,7 +54,7 @@
   99% {
   }
 }
-.itemTitle {
+.title {
   display: inline;
 
   color: rgb(37, 37, 37);
@@ -61,6 +66,6 @@
   margin: auto;
   transition: all 0.5s ease-out;
 }
-.itemTitle:hover {
+.title:hover {
   text-shadow: none;
 }

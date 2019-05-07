@@ -6,7 +6,7 @@ import styles, {
   imgMotherboard,
   imgOffice
 } from "./BoxedIdeas.module.css";
-import Button from "../../../../components/buttons/Button/Button";
+import Button from "../../../../components/buttons/button/Button";
 
 const BoxedIdeas = props => {
   const ideaArray = [

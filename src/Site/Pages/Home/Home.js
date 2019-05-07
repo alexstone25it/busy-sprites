@@ -1,11 +1,11 @@
 import React from "react";
 
-import Main from "../../../containers/major/Main";
+import Main from "../../../components/wrappers/Main";
 
 import TextBox from "../../../components/typography/textBox/TextBox";
 import UnboxedText from "../../../components/typography/unboxedText/UnboxedText";
-import Button from "../../../components/buttons/Button/Button";
-import Shading from "./Shading/Shading";
+import Button from "../../../components/buttons/button/Button";
+import Shading from "./shading/Shading";
 
 const Home = () => {
   const textOf = {

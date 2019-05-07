@@ -1,12 +1,16 @@
 .wrapper {
+  height: 12rem;
+  width: 80%;
+
   background-color: white;
+
   font-family: "Roboto", sans-serif;
   font-size: 1.8rem;
-  height: 12rem;
-  width: 100%;
-  z-index: 5;
+
+  margin: 0rem auto;
   border-top: 1px solid rgb(37, 37, 37);
   box-shadow: -1px -15px 25px rgb(31, 6, 252);
+
   transform: scale(1.1);
   transform: translateY(-10px);
   animation: paperPull 2s;
@@ -30,12 +34,6 @@
   }
   75% {
     height: 12rem;
-  }
-  90% {
-  }
-  95% {
-  }
-  99% {
   }
   100% {
     opacity: 1;
