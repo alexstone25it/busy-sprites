@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./BackText.module.css";
 
-import BtnPrimary from "../../../../components/buttons/buttonPrimary/BtnPrimary";
+import ButtonPrimary from "../../../../components/buttons/buttonPrimary/ButtonPrimary";
 
 const BackText = props => {
   const tar = props.target;
@@ -25,9 +25,9 @@ const BackText = props => {
   return (
     <div className={styles.info}>
       <p>{correctInfo}</p>
-      <BtnPrimary diffs="smallSquare" onClick={props.hideExtraInfo}>
+      <ButtonPrimary diffs="smallSquare" onClick={props.hideExtraInfo}>
         Know Less
-      </BtnPrimary>
+      </ButtonPrimary>
     </div>
   );
 };

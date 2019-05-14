@@ -1,5 +1,5 @@
 .wrapper {
-  width: calc(100% - 3rem);
+  width: calc(100% - 2rem);
 
   background-color: rgb(255, 255, 255);
 
@@ -8,4 +8,9 @@
   border: 1px solid rgb(143, 135, 106);
   border-radius: 10px;
   box-shadow: 1px 1px 20px 15px rgba(31, 6, 252, 0.8);
+}
+@media (min-width: 600px) {
+  .wrapper {
+    width: calc(100% - 6rem);
+  }
 }

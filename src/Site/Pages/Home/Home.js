@@ -5,7 +5,7 @@ import Main from "../../../components/wrappers/Main";
 import BlueWrapper from "../../../components/wrappers/BlueWrapper";
 import EmphasisTxt from "../../../components/typography/text/EmphasisTxt";
 import PrimaryTxt from "../../../components/typography/text/PrimaryTxt";
-import BtnPrimary from "../../../components/buttons/buttonPrimary/BtnPrimary";
+import ButtonPrimary from "../../../components/buttons/buttonPrimary/ButtonPrimary";
 import Shading from "./shading/Shading";
 
 const Home = () => {
@@ -24,9 +24,9 @@ const Home = () => {
       <PrimaryTxt>{textOf.unboxedTextTop}</PrimaryTxt>
       <Shading />
       <PrimaryTxt>{textOf.unboxedTextBottom}</PrimaryTxt>
-      <BtnPrimary diffs="fatLong" shadow="blue">
+      <ButtonPrimary diffs="fatOblong" boxshadow="boxShadowBlue">
         {textOf.btnText}
-      </BtnPrimary>
+      </ButtonPrimary>
     </Main>
   );
 };

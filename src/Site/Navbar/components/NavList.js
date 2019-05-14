@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
+import ModalComponent from "../../../site/pages/contact/modal/ModalComponent";
 
 class NavList extends Component {
   render() {
@@ -7,11 +8,13 @@ class NavList extends Component {
       <ul>
         <li>
           <NavLink to="/" exact activeClassName="custom-txt-blue">
-            Home
+            Log in
           </NavLink>
         </li>
-        <li className="custom-txt-white">
-          <NavLink to="/login">Log In</NavLink>
+        <li>
+          <NavLink to="/" exact activeClassName="custom-txt-blue">
+            Home
+          </NavLink>
         </li>
         <li className="custom-txt-white">
           <NavLink to="/services" exact activeClassName="custom-txt-blue">
@@ -20,12 +23,12 @@ class NavList extends Component {
         </li>
         <li className="custom-txt-white">
           <NavLink to="/about" exact activeClassName="custom-txt-blue">
-            About
+            About us
           </NavLink>
         </li>
         <li className="custom-txt-white">
           <NavLink to="/contact" exact activeClassName="custom-txt-blue">
-            Contact
+            Contact us
           </NavLink>
         </li>
       </ul>

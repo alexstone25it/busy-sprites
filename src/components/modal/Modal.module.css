@@ -1,0 +1,21 @@
+.modalBackground {
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(31, 6, 252, 0.3);
+
+  z-index: 1;
+}
+.modal {
+  width: 75%;
+  background-color: rgba(255, 255, 255, 0.9);
+
+  margin: 25% auto;
+}
+.modal button {
+  padding: 3rem;
+}

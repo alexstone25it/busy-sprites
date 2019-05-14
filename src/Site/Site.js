@@ -1,6 +1,5 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import { Route, Switch } from "react-router-dom";
-import styles from "./Site.module.css";
 
 import SideNav from "../site/navbar/components/SideNav";
 import TopNav from "../site/navbar/components/TopNav";
@@ -15,31 +14,46 @@ import Contact from "./pages/contact/Contact";
 import Footer from "./footer/Footer";
 
 class Site extends Component {
+  state = {
+    sideNav: true
+  };
+  componentDidMount() {
+    this.widthResizeHandler();
+    window.addEventListener("resize", this.widthResizeHandler);
+  }
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.widthResizeHandler);
+  }
+  widthResizeHandler = () => {
+    if (window.innerWidth < 600) {
+      this.setState({
+        sideNav: false
+      });
+    } else {
+      this.setState({ sideNav: true });
+    }
+  };
   render() {
+    const grid = {
+      display: "grid",
+      gridTemplateColumns: "20% 80%"
+    };
+    const gridNav = {
+      gridColumn: "1 / 2"
+    };
+    const gridInner = {
+      gridColumn: "2 / 3"
+    };
     return (
-      <Fragment>
-        <div className={styles.grid}>
-          <div className={styles.gridNav}>
+      <div style={this.state.sideNav ? grid : null}>
+        {this.state.sideNav ? (
+          <div style={gridNav}>
             <SideNav />
           </div>
-          <div className={styles.gridInner}>
-            <Route path="/" exact component={MissionStatement} />
-            <Switch>
-              <Route path="/" exact component={PrimaryHeader} />
-              <Route path="/" component={SecondaryHeader} />
-            </Switch>
-            <Switch>
-              <Route path="/" exact component={Home} />
-              <Route path="/about" exact component={About} />
-              <Route path="/services" exact component={Services} />
-              <Route path="/contact" exact component={Contact} />
-            </Switch>
-            <Route path="/" component={Footer} />
-          </div>
-        </div>
-
-        <div className={styles.noGrid}>
+        ) : (
           <TopNav />
+        )}
+        <div style={this.state.sideNav ? gridInner : null}>
           <Route path="/" exact component={MissionStatement} />
           <Switch>
             <Route path="/" exact component={PrimaryHeader} />
@@ -53,7 +67,7 @@ class Site extends Component {
           </Switch>
           <Route path="/" component={Footer} />
         </div>
-      </Fragment>
+      </div>
     );
   }
 }
