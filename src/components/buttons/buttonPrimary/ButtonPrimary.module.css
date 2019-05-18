@@ -1,13 +1,10 @@
 .btn {
   display: inline-block;
 
-  font-family: "Chakra Petch", sans-serif;
-  font-weight: 900;
+  background-color: rgba(255, 255, 255);
+  color: rgb(37, 37, 37);
 
-  color: rgb(255, 255, 255);
-  background: radial-gradient(rgb(143, 135, 106), rgb(98, 78, 6));
-
-  border: 3px solid rgb(241, 241, 221);
+  border: 3px solid rgb(31, 6, 252);
   border-radius: 30px;
   outline: none;
   margin: auto;
@@ -17,14 +14,9 @@
 }
 .btn:focus,
 .btn:hover {
-  background: radial-gradient(rgb(98, 78, 6), rgb(98, 78, 6));
-  box-shadow: 1px 7px 12px rgb(241, 241, 221);
+  box-shadow: 1px 7px 12px rgb(255, 255, 255);
 }
 .btn:active {
-  color: rgb(255, 255, 255);
-  background: radial-gradient(rgb(98, 78, 6), rgb(98, 78, 6));
-  border: 3px solid rgb(98, 78, 6);
-
   box-shadow: none;
 }
 /*DIFFS*/

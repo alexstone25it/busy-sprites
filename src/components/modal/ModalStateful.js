@@ -19,7 +19,7 @@ class RenderModal extends Component {
     const modalDiv = document.getElementById("modal");
     if (e.target === modalDiv) {
       this.setState({
-        isOpen: !this.state.isOpen
+        isOpen: false
       });
     }
   };
@@ -35,7 +35,7 @@ class RenderModal extends Component {
           </ModalStateless>
         ) : null}
 
-        <ButtonPrimary diffs="smallSquare" onClick={this.toggleModalHandler}>
+        <ButtonPrimary onClick={this.toggleModalHandler}>
           {this.props.modalContent.btnOpenTxt}
         </ButtonPrimary>
       </Fragment>

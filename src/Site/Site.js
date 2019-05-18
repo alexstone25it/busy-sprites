@@ -4,8 +4,8 @@ import { Route, Switch } from "react-router-dom";
 import SideNav from "../site/navbar/components/SideNav";
 import TopNav from "../site/navbar/components/TopNav";
 import MissionStatement from "../site/pages/home/missionStatement/MissionStatement";
-import PrimaryHeader from "../site/header/primaryHeader/PrimaryHeader";
-import SecondaryHeader from "../site/header/secondaryHeader/SecondaryHeader";
+import PrimaryH1 from "../components/typography/text/headers/h1/primaryH1/PrimaryH1";
+import SecondaryH1 from "../components/typography/text/headers/h1/secondaryH1/SecondaryH1";
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
 import Services from "./pages/services/Services";
@@ -56,8 +56,8 @@ class Site extends Component {
         <div style={this.state.sideNav ? gridInner : null}>
           <Route path="/" exact component={MissionStatement} />
           <Switch>
-            <Route path="/" exact component={PrimaryHeader} />
-            <Route path="/" component={SecondaryHeader} />
+            <Route path="/" exact component={PrimaryH1} />
+            <Route path="/" component={SecondaryH1} />
           </Switch>
           <Switch>
             <Route path="/" exact component={Home} />

@@ -9,40 +9,37 @@
 
   margin: 3rem auto;
   padding: 3rem 1.5rem;
-  border: 1px solid rgb(143, 135, 106);
+  border: 1px solid rgb(31, 6, 252);
   border-radius: 10px;
+}
+@media (min-width: 900px) {
+  .box {
+    width: 85%;
+  }
 }
 .heading {
   width: calc(100% - 6rem);
 
-  background-color: rgb(98, 78, 6);
-  color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.9);
 
-  font-family: "Roboto Slab", serif;
-  font-size: 1.8rem;
-  text-transform: uppercase;
   text-align: center;
   text-shadow: 0px 2px 10px rgb(31, 6, 252);
-  letter-spacing: 0.7rem;
-  line-height: 4rem;
 
   margin: 3rem auto;
-  border: 1px solid rgb(37, 37, 37);
+  border: 2px solid rgb(31, 6, 252);
   border-radius: 10px;
   box-shadow: 1px 1px 20px 15px rgb(241, 241, 221);
 }
 .text {
+  width: 75%;
+  background-color: rgba(37, 37, 37, 0.4);
   color: rgb(255, 255, 255);
+  text-shadow: -1px -1px 1px rgb(31, 6, 252), 1px 1px 1px rgb(31, 6, 252);
 
-  font-family: "Roboto", sans-serif;
-  font-size: 1.8rem;
-  font-weight: bolder;
-  letter-spacing: 0.3rem;
-  line-height: 2.5rem;
-  text-shadow: -1px -1px 1px rgb(0, 0, 0), 1px 1px 1px rgb(0, 0, 0);
-
+  border-radius: 10px;
   padding: 1.5rem;
   margin: 3rem auto;
+  box-shadow: 1px 3px 5px rgb(255, 255, 255), -1px -3px 5px rgb(255, 255, 255);
 }
 
 .imgMeeting {

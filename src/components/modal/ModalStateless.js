@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Modal.module.css";
-import ButtonPrimary from "../buttons/buttonPrimary/ButtonPrimary";
+import ButtonMinus from "../buttons/buttonMinus/ButtonMinus";
 
 const ModalStateless = props => (
   <div className={styles.modalBackground} id="modal">
@@ -8,12 +8,12 @@ const ModalStateless = props => (
       <div className={styles.modalHeader}>
         <span>{props.modalContent.title}</span>
         <span>
-          <ButtonPrimary onClick={props.toggleModal}>&times;</ButtonPrimary>
+          <ButtonMinus onClick={props.toggleModal} />
         </span>
-        <div className={styles.modalBody}>
-          {props.modalContent.body}
-          {props.children}
-        </div>
+      </div>
+      <div className={styles.modalBody}>
+        {props.modalContent.body}
+        {props.children}
       </div>
 
       <div className={styles.modalFooter}>{props.modalContent.footer}</div>

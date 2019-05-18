@@ -1,10 +1,10 @@
 import React from "react";
 
-import Main from "../../../components/wrappers/Main";
+import MainWrapper from "../../../components/wrappers/mains/MainWrapper";
 
-import BlueWrapper from "../../../components/wrappers/BlueWrapper";
-import EmphasisTxt from "../../../components/typography/text/EmphasisTxt";
-import PrimaryTxt from "../../../components/typography/text/PrimaryTxt";
+import DivWrapperEmphasis from "../../../components/wrappers/divs/divWrapperEmphasis/DivWrapperEmphasis";
+import EmphasisTxt from "../../../components/typography/text/paragraphs/EmphasisTxt/EmphasisTxt";
+import PrimaryTxt from "../../../components/typography/text/paragraphs/PrimaryTxt/PrimaryTxt";
 import ButtonPrimary from "../../../components/buttons/buttonPrimary/ButtonPrimary";
 import Shading from "./shading/Shading";
 
@@ -17,17 +17,17 @@ const Home = () => {
     btnText: "Our Services"
   };
   return (
-    <Main display="withflexCol" extras="centerText">
-      <BlueWrapper>
+    <MainWrapper>
+      <DivWrapperEmphasis>
         <EmphasisTxt>{textOf.textBox}</EmphasisTxt>
-      </BlueWrapper>
+      </DivWrapperEmphasis>
       <PrimaryTxt>{textOf.unboxedTextTop}</PrimaryTxt>
       <Shading />
       <PrimaryTxt>{textOf.unboxedTextBottom}</PrimaryTxt>
       <ButtonPrimary diffs="fatOblong" boxshadow="boxShadowBlue">
         {textOf.btnText}
       </ButtonPrimary>
-    </Main>
+    </MainWrapper>
   );
 };
 

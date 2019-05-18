@@ -1,15 +1,14 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
-import ModalComponent from "../../../site/pages/contact/modal/ModalComponent";
+import ModalComponent from "../../pages/contact/modal/ModalComponent";
+import { MODAL_NAV_CONTENT } from "../../pages/contact/modal/MODAL_CONTENT";
 
 class NavList extends Component {
   render() {
     return (
       <ul>
-        <li>
-          <NavLink to="/" exact activeClassName="custom-txt-blue">
-            Log in
-          </NavLink>
+        <li className="custom-txt-white">
+          <ModalComponent modalContent={MODAL_NAV_CONTENT} />
         </li>
         <li>
           <NavLink to="/" exact activeClassName="custom-txt-blue">

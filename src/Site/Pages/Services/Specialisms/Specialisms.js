@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import Div from "../../../../components/wrappers/Div";
+import DivWrapperPlain from "../../../../components/wrappers/divs/divWrapperPlain/DivWrapperPlain";
 import Specialism from "./specialism/Specialism";
 import SkillPaper from "./skillPapers/SkillPaper";
 
@@ -54,7 +54,7 @@ class Specialisms extends Component {
       }
     ];
     return (
-      <Div display="withFlexCol">
+      <DivWrapperPlain>
         {skillsArray.map(skill => (
           <Fragment key={skill.id}>
             <Specialism
@@ -68,7 +68,7 @@ class Specialisms extends Component {
             ) : null}
           </Fragment>
         ))}
-      </Div>
+      </DivWrapperPlain>
     );
   }
 }

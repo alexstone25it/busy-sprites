@@ -4,7 +4,6 @@
   border: none;
   outline: none;
 
-  cursor: pointer;
   animation: appear 3s linear;
 }
 @keyframes appear {

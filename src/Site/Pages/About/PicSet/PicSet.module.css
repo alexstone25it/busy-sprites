@@ -6,9 +6,9 @@
 
   width: 55%;
   height: 20rem;
-  background-color: rgb(143, 135, 106);
+  background-color: rgb(37, 37, 37);
   margin: 3% auto;
-  border: 1.5rem solid rgb(143, 135, 106);
+  border: 1.5rem solid rgb(37, 37, 37);
   border-radius: 10px;
 }
 .container img {

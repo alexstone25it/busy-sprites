@@ -1,33 +1,22 @@
 import React, { Component } from "react";
 import styles from "./Form.module.css";
 import { FORM_INPUT_GROUPS } from "./FORM_INPUT_GROUPS";
+import { INITIAL_FORM_STATE } from "./INITIAL_FORM_STATE";
 
 import ButtonPrimary from "../../../../components/buttons/buttonPrimary/ButtonPrimary";
 import FormInputGroup from "../../../../components/forms/FormInputGroup";
+import CircleSpinner from "../../../../components/loaders/circle/CircleSpinner";
+import ErrorComponent from "../../../../components/transients/ErrorComponent";
+import SuccessComponent from "../../../../components/transients/SuccessComponent";
+
+import axiosInstance from "../../../../axiosInstance";
 
 class Form extends Component {
   state = {
-    firstname: "",
-    lastname: "",
-    companyname: "",
-    telnum: "",
-    email: "",
-    message: "",
-    touched: {
-      firstname: false,
-      lastname: false,
-      companyname: false,
-      telnum: false,
-      email: false,
-      message: false
-    },
-    formValid: {
-      firstname: false,
-      lastname: false,
-      email: false,
-      message: false
-    },
-    formErrors: []
+    ...INITIAL_FORM_STATE,
+    isLoading: false,
+    hasError: false,
+    isSent: false
   };
   onChangeHandler = event => {
     const name = event.target.name;
@@ -110,32 +99,63 @@ class Form extends Component {
     }
   };
   submitFormToServer = () => {
-    console.log("to server");
-    this.setState({
-      firstname: "",
-      lastname: "",
-      companyname: "",
-      telnum: "",
-      email: "",
-      message: "",
-      touched: {
-        firstname: false,
-        lastname: false,
-        companyname: false,
-        telnum: false,
-        email: false,
-        message: false
-      },
-      formValid: {
-        firstname: false,
-        lastname: false,
-        email: false,
-        message: false
-      },
-      formErrors: []
-    });
+    this.setState({ isLoading: true });
+    const newCustomer = {
+      firstname: this.state.firstname,
+      lastname: this.state.lastname,
+      companyname: this.state.companyname,
+      telnum: this.state.telnum,
+      email: this.state.email,
+      message: this.state.message
+    };
+    axiosInstance
+      .post("/newcustomers.json", newCustomer)
+      .then(response => {
+        if (response.status === 200) {
+          this.setState({
+            ...INITIAL_FORM_STATE,
+            isLoading: false,
+            hasError: false,
+            isSent: true
+          });
+          setTimeout(
+            () =>
+              this.setState({
+                isSent: false
+              }),
+            8000
+          );
+        } else {
+          this.setState({
+            isLoading: false,
+            hasError: true
+          });
+        }
+      })
+      .catch(error => {
+        this.setState({ isLoading: false, hasError: true });
+      });
   };
   render() {
+    let formFooter = (
+      <ButtonPrimary
+        diffs="smallSquare"
+        boxShadow="boxShadowBlue"
+        type="submit"
+        value="Submit"
+      >
+        Submit
+      </ButtonPrimary>
+    );
+    if (this.state.isLoading) {
+      formFooter = <CircleSpinner />;
+    }
+    if (this.state.hasError) {
+      formFooter = <ErrorComponent />;
+    }
+    if (this.state.isSent) {
+      formFooter = <SuccessComponent />;
+    }
     return (
       <form onSubmit={this.onSubmitHandler} className={styles.form}>
         <FormInputGroup
@@ -152,16 +172,7 @@ class Form extends Component {
           formValid={this.state.formValid}
           formErrors={this.state.formErrors}
         />
-        <div>
-          <ButtonPrimary
-            diffs="smallSquare"
-            boxShadow="boxShadowBlue"
-            type="submit"
-            value="Submit"
-          >
-            Submit
-          </ButtonPrimary>
-        </div>
+        <div>{formFooter}</div>
       </form>
     );
   }

@@ -8,19 +8,14 @@
 .text {
   background: linear-gradient(
     to bottom,
-    rgb(98, 78, 6) 70%,
-    rgb(143, 135, 106) 90%,
-    rgb(241, 241, 221)
+    rgb(37, 37, 37) 10%,
+    rgb(31, 6, 252) 70%,
+    rgb(241, 241, 221) 95%
   );
   color: rgb(255, 255, 255);
 
-  font-weight: 900;
-  font-size: 2rem;
-  letter-spacing: 0.5rem;
-  line-height: 3rem;
-  text-shadow: 1px 2px 1px rgb(31, 6, 252), -1px -1px 2px rgb(31, 6, 252);
+  text-shadow: 1px 1px 1px rgb(37, 37, 37);
   text-align: center;
-  text-transform: uppercase;
 
   padding: 9%;
 }

@@ -1,7 +1,7 @@
 .container {
   position: relative;
 }
-.bgPic {
+.bgImg {
   display: block;
 
   width: 100%;
@@ -10,10 +10,23 @@
 
   background: rgb(31, 6, 252);
   background: linear-gradient(rgba(31, 6, 252, 0.3), rgba(31, 6, 252, 0.3)),
-    url("./images/tech.jpg");
+    url("./tech.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 
   padding: 6%;
+}
+.txt {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-items: center;
+
+  color: rgb(255, 255, 255);
+
+  text-shadow: 1px 1px 1px rgb(37, 37, 37),
+    -85px -10px 5px rgba(31, 6, 252, 0.3);
+
+  margin: 3%;
 }

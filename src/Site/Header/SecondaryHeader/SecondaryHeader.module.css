@@ -1,9 +1,0 @@
-.container {
-  background: linear-gradient(
-    to bottom,
-    rgb(98, 78, 6) 70%,
-    rgb(143, 135, 106) 90%,
-    rgb(241, 241, 221)
-  );
-  padding: 3% 3% 9% 3%;
-}

@@ -1,11 +1,6 @@
 .footer {
-  background: linear-gradient(to top, rgb(98, 78, 6), rgb(143, 135, 106));
+  background: linear-gradient(to top, rgb(37, 37, 37), rgb(31, 6, 252));
   color: rgb(255, 255, 255);
-
-  font-family: "Chakra Petch", sans-serif;
-  font-size: 1.6rem;
-  letter-spacing: 0.2rem;
-  line-height: 3rem;
 
   padding: 1.5rem;
   margin-top: 3rem;

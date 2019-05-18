@@ -1,26 +1,27 @@
 import React, { Component, Fragment } from "react";
 
-import Div from "../../../components/wrappers/Div";
-import BlueWrapper from "../../../components/wrappers/BlueWrapper";
-import PrimaryTxt from "../../../components/typography/text/PrimaryTxt";
+import DivWrapper2x2Grid from "../../../components/wrappers/divs/DivWrapper2x2Grid/DivWrapper2x2Grid";
+import DivWrapperEmphasis from "../../../components/wrappers/divs/divWrapperEmphasis/DivWrapperEmphasis";
+import PrimaryTxt from "../../../components/typography/text/paragraphs/PrimaryTxt/PrimaryTxt";
 import Form from "./form/Form";
 import ModalComponent from "./modal/ModalComponent";
+import { MODAL_CONTACT_CONTENT } from "./modal/MODAL_CONTENT";
 
 class Contact extends Component {
   render() {
     return (
       <Fragment>
-        <Div display="with2X2Grid">
+        <DivWrapper2x2Grid>
           <PrimaryTxt>Already a customer?</PrimaryTxt>
-          <ModalComponent />
-        </Div>
-        <Div display="with2X2Grid">
+          <ModalComponent modalContent={MODAL_CONTACT_CONTENT} />
+        </DivWrapper2x2Grid>
+        <DivWrapper2x2Grid>
           <PrimaryTxt>Not yet a customer?</PrimaryTxt>
           <PrimaryTxt>Send us a message</PrimaryTxt>
-        </Div>
-        <BlueWrapper>
+        </DivWrapper2x2Grid>
+        <DivWrapperEmphasis>
           <Form />
-        </BlueWrapper>
+        </DivWrapperEmphasis>
       </Fragment>
     );
   }
