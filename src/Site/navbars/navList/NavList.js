@@ -1,16 +1,18 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import ModalComponent from "../../modal/ModalComponent";
+import ModalComponent from "../../../components/modal/ModalComponent";
 
-import { MODAL_NAV_CONTENT } from "../../modal/DATA/MODAL_CONTENT";
-import { MODAL_INPUT_GROUPS } from "../../modal/DATA/MODAL_INPUT_GROUPS";
+import {
+  NAV_MODAL_CONTENT,
+  NAV_MODAL_INPUT_GROUPS
+} from "../DATA/NAV_MODAL_CONTENT";
 
 const NavList = () => (
   <ul>
     <li>
       <ModalComponent
-        modalContent={MODAL_NAV_CONTENT}
-        modalInputGroups={MODAL_INPUT_GROUPS}
+        modalContent={NAV_MODAL_CONTENT}
+        modalInputGroups={NAV_MODAL_INPUT_GROUPS}
       />
     </li>
     <li>

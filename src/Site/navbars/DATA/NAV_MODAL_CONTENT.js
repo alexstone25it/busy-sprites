@@ -1,4 +1,11 @@
-export const MODAL_INPUT_GROUPS = [
+export const NAV_MODAL_CONTENT = {
+  title: "Log In",
+  body: "",
+  footer: "",
+  btnOpenTxt: "Log In",
+  btnCloseTxt: ""
+};
+export const NAV_MODAL_INPUT_GROUPS = [
   {
     key: "1",
     for: "username",

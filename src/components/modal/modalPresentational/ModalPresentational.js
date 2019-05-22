@@ -1,8 +1,8 @@
 import React from "react";
-import styles from "./Modal.module.css";
-import ButtonMinus from "../../components/buttons/buttonMinus/ButtonMinus";
+import styles from "./ModalPresentational.module.css";
+import ButtonMinus from "../../buttons/buttonMinus/ButtonMinus";
 
-const ModalStateless = props => (
+const ModalPresentational = props => (
   <div className={styles.modalBackground} id="modal">
     <div className={styles.modal}>
       <div className={styles.modalHeader}>
@@ -20,4 +20,4 @@ const ModalStateless = props => (
     </div>
   </div>
 );
-export default ModalStateless;
+export default ModalPresentational;

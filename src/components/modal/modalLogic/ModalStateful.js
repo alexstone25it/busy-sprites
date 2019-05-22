@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react";
 
-import ButtonPrimary from "../../components/buttons/buttonPrimary/ButtonPrimary";
-import ModalStateless from "./ModalStateless";
+import ButtonPrimary from "../../buttons/buttonPrimary/ButtonPrimary";
+import ModalPresentational from "../modalPresentational/ModalPresentational";
 
 class ModalStateful extends Component {
   state = {
@@ -30,12 +30,12 @@ class ModalStateful extends Component {
     return (
       <Fragment>
         {this.state.isOpen ? (
-          <ModalStateless
+          <ModalPresentational
             modalContent={this.props.modalContent}
             toggleModal={this.toggleModalHandler}
           >
             {this.props.children}
-          </ModalStateless>
+          </ModalPresentational>
         ) : null}
 
         <ButtonPrimary onClick={this.toggleModalHandler}>

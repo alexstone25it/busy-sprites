@@ -2,9 +2,9 @@ import React from "react";
 import styles from "./ErrorComponent.module.css";
 import ButtonX from "../buttons/buttonX/ButtonX";
 
-const ErrorComponent = props => (
+const ErrorComponent = ({ errorComponentMessage }) => (
   <div className={styles.wrapper}>
-    <h4>Sorry there seems to be something wrong!</h4>
+    <h4>{errorComponentMessage}</h4>
     <ButtonX />
   </div>
 );

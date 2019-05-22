@@ -1,7 +1,7 @@
 import React from "react";
 
-import ModalStateful from "./ModalStateful";
-import ModalForm from "./ModalForm";
+import ModalStateful from "./modalLogic/ModalStateful";
+import ModalForm from "./modalForm/ModalForm";
 
 const ModalComponent = props => (
   <ModalStateful modalContent={props.modalContent}>

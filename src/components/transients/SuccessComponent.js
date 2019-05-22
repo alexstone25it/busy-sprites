@@ -1,8 +1,8 @@
 import React from "react";
 
-const SuccessComponent = () => (
+const SuccessComponent = ({ successComponentMessage }) => (
   <div>
-    <h4>Your message has been sent.</h4>
+    <h4>{successComponentMessage}</h4>
   </div>
 );
 export default SuccessComponent;

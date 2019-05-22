@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import FormInputGroup from "../../components/forms/formComponents/FormInputGroup";
+import FormInputGroup from "../../forms/formComponents/FormInputGroup";
 
 class ModalForm extends Component {
   state = {

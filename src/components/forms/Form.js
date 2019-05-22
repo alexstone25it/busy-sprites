@@ -149,10 +149,18 @@ class Form extends Component {
       formFooter = <CircleSpinner />;
     }
     if (this.state.hasError) {
-      formFooter = <ErrorComponent />;
+      formFooter = (
+        <ErrorComponent
+          errorComponentMessage={this.props.errorComponentMessage}
+        />
+      );
     }
     if (this.state.isSent) {
-      formFooter = <SuccessComponent />;
+      formFooter = (
+        <SuccessComponent
+          successComponentMessage={this.props.successComponentMessage}
+        />
+      );
     }
     return (
       <form onSubmit={this.onSubmitHandler} className={styles.form}>

@@ -4,12 +4,18 @@ import DivWrapperPlain from "../../../components/wrappers/divs/divWrapperPlain/D
 import DivWrapperEmphasis from "../../../components/wrappers/divs/divWrapperEmphasis/DivWrapperEmphasis";
 import PrimaryTxt from "../../../components/typography/text/paragraphs/PrimaryTxt/PrimaryTxt";
 import Form from "../../../components/forms/Form";
-import ModalComponent from "../../modal/ModalComponent";
+import ModalComponent from "../../../components/modal/ModalComponent";
 
 import { INITIAL_FORM_STATE } from "./DATA/INITIAL_FORM_STATE";
 import { FORM_INPUT_GROUPS } from "./DATA/FORM_INPUT_GROUPS";
-import { MODAL_CONTACT_CONTENT } from "../../modal/DATA/MODAL_CONTENT";
-import { MODAL_INPUT_GROUPS } from "../../modal/DATA/MODAL_INPUT_GROUPS";
+import {
+  CONTACT_MODAL_CONTENT,
+  CONTACT_MODAL_INPUT_GROUPS
+} from "./DATA/CONTACT_MODAL_CONTENT";
+import {
+  CONTACT_ERROR_MESSAGE,
+  CONTACT_SUCCESS_MESSAGE
+} from "./DATA/CONTACT_TRANSIENT_MESSAGES";
 
 import {
   MARGIN_TOP_FULL,
@@ -32,8 +38,8 @@ const Contact = () => (
       <DivWrapperPlain direction="row">
         <PrimaryTxt>Already a customer?</PrimaryTxt>
         <ModalComponent
-          modalContent={MODAL_CONTACT_CONTENT}
-          modalInputGroups={MODAL_INPUT_GROUPS}
+          modalContent={CONTACT_MODAL_CONTENT}
+          modalInputGroups={CONTACT_MODAL_INPUT_GROUPS}
         />
       </DivWrapperPlain>
     </DivWrapperEmphasis>
@@ -61,6 +67,8 @@ const Contact = () => (
         <Form
           initialFormState={INITIAL_FORM_STATE}
           formInputGroups={FORM_INPUT_GROUPS}
+          errorComponentMessage={CONTACT_ERROR_MESSAGE}
+          successComponentMessage={CONTACT_SUCCESS_MESSAGE}
         />
       </DivWrapperEmphasis>
     </DivWrapperEmphasis>
