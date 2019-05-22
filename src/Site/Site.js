@@ -1,17 +1,19 @@
 import React, { Component } from "react";
 import { Route, Switch } from "react-router-dom";
 
-import SideNav from "../site/navbar/components/SideNav";
-import TopNav from "../site/navbar/components/TopNav";
-import MissionStatement from "../site/pages/home/missionStatement/MissionStatement";
+import SideNav from "./navbars/SideNav";
+import TopNav from "./navbars/TopNav";
+import Jumbotron from "../components/jumbotron/Jumbotron";
 import PrimaryH1 from "../components/typography/text/headers/h1/primaryH1/PrimaryH1";
 import SecondaryH1 from "../components/typography/text/headers/h1/secondaryH1/SecondaryH1";
-import Home from "./pages/home/Home";
-import About from "./pages/about/About";
-import Services from "./pages/services/Services";
-import Contact from "./pages/contact/Contact";
+import Home from "./pagination/home/Home";
+import About from "./pagination/about/About";
+import Services from "./pagination/services/Services";
+import Contact from "./pagination/contact/Contact";
 
 import Footer from "./footer/Footer";
+
+import { MISSION_STATEMENT } from "./pagination/home/DATA/MISSION_STATEMENT";
 
 class Site extends Component {
   state = {
@@ -54,7 +56,11 @@ class Site extends Component {
           <TopNav />
         )}
         <div style={this.state.sideNav ? gridInner : null}>
-          <Route path="/" exact component={MissionStatement} />
+          <Route
+            path="/"
+            exact
+            component={() => <Jumbotron text={MISSION_STATEMENT} />}
+          />
           <Switch>
             <Route path="/" exact component={PrimaryH1} />
             <Route path="/" component={SecondaryH1} />

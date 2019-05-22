@@ -1,8 +1,6 @@
 .wrapper {
   display: inline-block;
   position: relative;
-
-  margin: auto;
 }
 .wrapper button {
   color: rgb(37, 37, 37);

@@ -9,6 +9,13 @@ p {
   letter-spacing: 0.2rem;
   line-height: 3rem;
 }
+a {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  line-height: 2rem;
+  text-decoration: none;
+}
 h1,
 h2,
 h3,
@@ -34,7 +41,7 @@ h6 {
   line-height: 3rem;
   letter-spacing: 0.7rem;
 }
-a,
+
 button {
   font-size: 1.8rem;
   font-family: "Roboto Mono", monospace;
@@ -44,6 +51,9 @@ button {
 }
 .txt--white {
   color: rgb(255, 255, 255);
+}
+.txt--underline {
+  text-decoration: underline;
 }
 .txt--blue {
   color: rgb(31, 6, 252);

@@ -1,16 +1,13 @@
 .wrapper {
-  width: calc(100% - 2rem);
+  width: calc(100% - 4rem);
 
   background-color: rgb(255, 255, 255);
-
-  margin: 3rem auto;
-  padding: 3rem;
-  border: 2px solid rgb(37, 37, 37);
+  padding: 2rem;
+  border: 1px solid rgb(31, 6, 252);
   border-radius: 10px;
-  box-shadow: 1px 1px 20px 15px rgba(31, 6, 252, 0.8);
 }
 @media (min-width: 600px) {
   .wrapper {
-    width: calc(100% - 6rem);
+    width: 80%;
   }
 }
