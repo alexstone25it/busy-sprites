@@ -1,0 +1,19 @@
+.footer {
+  display: flex;
+  flex: 1;
+  flex-flow: column nowrap;
+  background: linear-gradient(to top, $color-secondary, $color-primary);
+  color: $color-tertiary;
+
+  padding: 4%;
+}
+.footer > div {
+  min-width: 100%;
+  align-self: center;
+  @media (min-width: 400px) {
+    min-width: 80%;
+  }
+  @media (min-width: 800px) {
+    min-width: 40%;
+  }
+}

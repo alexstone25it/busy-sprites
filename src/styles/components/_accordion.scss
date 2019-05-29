@@ -1,0 +1,36 @@
+.accordion {
+  width: 80%;
+  margin: auto;
+  &__head {
+    width: 100%;
+    border-bottom: 2px solid rgb(51, 51, 51);
+    transition: 0.3s ease-out;
+  }
+  &__body {
+    display: flex;
+
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+
+    box-shadow: -1px -5px 10px rgb(31, 6, 252);
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid rgb(37, 37, 37);
+    }
+    &--closed {
+      max-height: 0;
+      overflow: hidden;
+    }
+    &--open {
+      max-height: auto;
+      overflow: visible;
+      display: flex;
+
+      text-align: center;
+
+      border-top: 1px solid rgb(37, 37, 37);
+      box-shadow: -1px -10px 25px rgb(31, 6, 252);
+      animation: paperUp 2s;
+    }
+  }
+}

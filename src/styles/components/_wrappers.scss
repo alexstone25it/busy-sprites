@@ -1,0 +1,21 @@
+.wrapper {
+  display: flex;
+  flex: 1;
+}
+.wrapper-col {
+  flex-flow: column wrap;
+}
+.wrapper-row {
+  flex-flow: row wrap;
+}
+.wrapper-emphasis {
+  width: calc(100% - 4rem);
+
+  background-color: rgb(255, 255, 255);
+  padding: 2rem;
+  border: 1px solid rgb(31, 6, 252);
+  border-radius: 10px;
+  @media (min-width: 600px) {
+    width: 80%;
+  }
+}

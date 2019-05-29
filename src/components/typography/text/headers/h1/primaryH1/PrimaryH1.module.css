@@ -1,5 +1,6 @@
-.container {
+.wrapper {
   position: relative;
+  filter: contrast(150%);
 }
 .bgImg {
   display: block;

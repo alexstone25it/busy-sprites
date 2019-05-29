@@ -1,13 +1,12 @@
 import React from "react";
-import styles from "./Logo.module.css";
 
 const Logo = () => {
   return (
-    <h4 className={styles.logoTxt}>
+    <h3 className="logo">
       <span>Busy</span>
       <br />
-      <span>&nbsp;Sprites</span>
-    </h4>
+      <span>Sprites</span>
+    </h3>
   );
 };
 export default Logo;

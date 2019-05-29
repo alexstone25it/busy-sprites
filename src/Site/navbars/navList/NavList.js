@@ -19,8 +19,8 @@ const NavList = () => (
       <NavLink
         to="/"
         exact
-        className="txt--white"
-        activeClassName="txt--underline"
+        className="txt-light"
+        activeClassName="txt-underline"
       >
         Home
       </NavLink>
@@ -29,8 +29,8 @@ const NavList = () => (
       <NavLink
         to="/services"
         exact
-        className="txt--white"
-        activeClassName="txt--underline"
+        className="txt-light"
+        activeClassName="txt-underline"
       >
         Services
       </NavLink>
@@ -39,8 +39,8 @@ const NavList = () => (
       <NavLink
         to="/about"
         exact
-        className="txt--white"
-        activeClassName="txt--underline"
+        className="txt-light"
+        activeClassName="txt-underline"
       >
         About us
       </NavLink>
@@ -49,8 +49,8 @@ const NavList = () => (
       <NavLink
         to="/contact"
         exact
-        className="txt--white"
-        activeClassName="txt--underline"
+        className="txt-light"
+        activeClassName="txt-underline"
       >
         Contact us
       </NavLink>

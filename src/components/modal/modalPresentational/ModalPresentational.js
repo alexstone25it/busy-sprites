@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./ModalPresentational.module.css";
-import ButtonMinus from "../../buttons/buttonMinus/ButtonMinus";
+import ButtonAction from "../../buttons/buttonAction/buttonAction";
 
 const ModalPresentational = props => (
   <div className={styles.modalBackground} id="modal">
@@ -8,7 +8,7 @@ const ModalPresentational = props => (
       <div className={styles.modalHeader}>
         <span>{props.modalContent.title}</span>
         <span>
-          <ButtonMinus onClick={props.toggleModal} />
+          <ButtonAction alter="btn-action-small" onClick={props.toggleModal} />
         </span>
       </div>
       <div className={styles.modalBody}>

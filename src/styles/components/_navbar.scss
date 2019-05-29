@@ -1,0 +1,108 @@
+.sideNavbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 20%;
+  height: 100%;
+
+  background-color: $color-secondary;
+  background: linear-gradient(to right, $color-dark 5%, $color-secondary);
+
+  margin-top: 0;
+  margin-left: 0;
+  box-shadow: 5px 0px 12px $color-primary;
+
+  z-index: 1;
+  &:first-child {
+    padding-top: 5%;
+  }
+  & ul {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    background-color: $color-secondary;
+    background: linear-gradient(to right, $color-dark 5%, $color-secondary);
+    margin-top: 15%;
+    z-index: 1;
+    & li {
+      width: 80%;
+
+      text-align: left;
+
+      padding: 2rem;
+      margin-left: 10%;
+      border-bottom: 1px dotted rgba($color-light, 0.5);
+
+      z-index: 2;
+    }
+  }
+}
+.topNavbar {
+  position: relative;
+
+  width: 100%;
+  height: 8rem;
+  background-color: $color-secondary;
+
+  z-index: 1;
+  &__btnWrapper {
+    position: fixed;
+
+    padding: 1rem;
+    margin-left: 80%;
+    z-index: 2;
+    & button {
+      background: transparent;
+      color: $color-tertiary;
+    }
+  }
+  & ul {
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 70%;
+
+    color: rgb(255, 255, 255);
+
+    background-color: rgb(37, 37, 37);
+    color: rgb(255, 255, 255);
+
+    font-size: 2rem;
+
+    padding: 5rem 5rem 4rem 2rem;
+
+    z-index: 1;
+    & li {
+      width: 80%;
+      background-color: $color-secondary;
+      color: $color-tertiary;
+      text-align: left;
+      padding: 2rem;
+      margin: auto;
+      border-bottom: 1px dotted rgba($color-light, 0.5);
+
+      z-index: 2;
+      cursor: pointer;
+      transition: all 0.5s ease-in-out;
+      border-bottom: 1px dotted $color-light;
+      animation: slowDrop 1s linear;
+      backface-visibility: hidden;
+      & a {
+        color: rgb(255, 255, 255);
+        &:hover {
+          text-transform: uppercase;
+        }
+        &:active {
+          color: $color-primary;
+        }
+      }
+    }
+  }
+}

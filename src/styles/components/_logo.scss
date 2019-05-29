@@ -1,0 +1,22 @@
+.logo {
+  color: $color-tertiary;
+  font-family: "Roboto Slab", serif;
+  font-size: 1.8rem;
+  letter-spacing: 0.3rem;
+  text-shadow: 3px 5px 1px $color-secondary, -3px -3px 5px $color-primary;
+  text-align: center;
+  transform: skewY(-25deg);
+  opacity: 1;
+}
+.logoTxt {
+  position: fixed;
+  top: 2rem;
+  left: 1rem;
+}
+.logoBoxOnScrolling {
+  line-height: 2.5rem;
+  top: 0rem;
+  transform: skew(0deg);
+  width: 100%;
+  padding: 0;
+}

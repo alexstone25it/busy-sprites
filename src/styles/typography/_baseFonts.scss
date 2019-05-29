@@ -1,0 +1,74 @@
+html {
+  font-size: 62.5%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Slab", serif;
+  text-transform: uppercase;
+}
+h1 {
+  font-size: 3.5rem;
+  font-weight: 100;
+  letter-spacing: 1.5rem;
+  line-height: 5.5rem;
+  text-align: center;
+}
+h2 {
+  font-size: 2rem;
+  line-height: 3rem;
+  letter-spacing: 0.5rem;
+  text-align: left;
+}
+h3,
+h4,
+h5,
+h6 {
+  font-size: 2rem;
+  line-height: 3rem;
+  letter-spacing: 0.7rem;
+}
+@media (min-width: 600px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 900px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+p,
+li,
+label,
+input {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+  line-height: 3rem;
+}
+p {
+  text-align: center;
+}
+a,
+button {
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
+}
+a {
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+}
+button {
+  font-size: 1.8rem;
+}
+address {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.2rem;
+  line-height: 3rem;
+  font-style: italic;
+}

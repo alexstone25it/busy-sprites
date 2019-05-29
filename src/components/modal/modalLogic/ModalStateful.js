@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 
-import ButtonPrimary from "../../buttons/buttonPrimary/ButtonPrimary";
+import ButtonAction from "../../buttons/buttonAction/buttonAction";
 import ModalPresentational from "../modalPresentational/ModalPresentational";
 
 class ModalStateful extends Component {
@@ -38,9 +38,12 @@ class ModalStateful extends Component {
           </ModalPresentational>
         ) : null}
 
-        <ButtonPrimary onClick={this.toggleModalHandler}>
+        <ButtonAction
+          alter="btn-action-primary padding-norm txt-light"
+          onClick={this.toggleModalHandler}
+        >
           {this.props.modalContent.btnOpenTxt}
-        </ButtonPrimary>
+        </ButtonAction>
       </Fragment>
     );
   }

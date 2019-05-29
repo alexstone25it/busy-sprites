@@ -1,9 +1,6 @@
 .brand {
   color: rgb(37, 37, 37);
-
-  font-family: "Roboto Slab", serif;
-  font-weight: bolder;
-  font-size: 1.15em;
+  font-size: 1.2em;
   text-shadow: none;
   text-transform: uppercase;
 }

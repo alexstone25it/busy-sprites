@@ -1,47 +1,29 @@
 import React from "react";
 
-import MainWrapper from "../../../components/wrappers/mains/MainWrapper";
+import MainContainer from "../../../components/containers/mains/MainContainer";
 
-import DivWrapperEmphasis from "../../../components/wrappers/divs/divWrapperEmphasis/DivWrapperEmphasis";
-import EmphasisTxt from "../../../components/typography/text/paragraphs/EmphasisTxt/EmphasisTxt";
-import PrimaryTxt from "../../../components/typography/text/paragraphs/PrimaryTxt/PrimaryTxt";
-import Shading from "./shading/Shading";
-
-import {
-  MARGIN_TOP_FULL,
-  MARGIN_TOP_HALF,
-  MARGIN_BOTTOM_FULL,
-  MARGIN_BOTTOM_HALF,
-  MARGIN_SIDES_AUTO
-} from "../PAGE_STYLES";
+import DivWrapper from "../../../components/wrappers/DivWrapper";
+import PrimaryTxt from "../../../components/typography/text/text/PrimaryTxt";
+import Shading from "./shadedContent/ShadedContent";
+import Brand from "../../../components/typography/branding/Brand";
 
 const Home = () => (
-  <MainWrapper>
-    <DivWrapperEmphasis
-      pageStyles={Object.assign(
-        {},
-        MARGIN_TOP_FULL,
-        MARGIN_BOTTOM_FULL,
-        MARGIN_SIDES_AUTO
-      )}
-    >
-      <EmphasisTxt>
+  <MainContainer>
+    <DivWrapper alter="wrapper-col wrapper-emphasis margins--top-full margins--bottom-full margins--lr-any">
+      <PrimaryTxt alter="txt-emphasis">
         The only stop needed for all your technology needs.
-      </EmphasisTxt>
-    </DivWrapperEmphasis>
-    <PrimaryTxt
-      pageStyles={Object.assign({}, MARGIN_BOTTOM_HALF, MARGIN_SIDES_AUTO)}
-    >
+      </PrimaryTxt>
+    </DivWrapper>
+    <PrimaryTxt alter="txt-normal margins--bottom-half margins--lr-any">
       Thought, design, application, security and support for businesses large
       and small.
     </PrimaryTxt>
     <Shading />
-    <PrimaryTxt
-      pageStyles={Object.assign({}, MARGIN_TOP_HALF, MARGIN_SIDES_AUTO)}
-    >
-      A complete service by Busy Sprites.
+    <PrimaryTxt alter="txt-normal margins--top-half margins--lr-any">
+      A complete service by <br />
+      <Brand />.
     </PrimaryTxt>
-  </MainWrapper>
+  </MainContainer>
 );
 
 export default Home;

@@ -1,0 +1,44 @@
+@keyframes slowDrop {
+  0% {
+    transform: translateY(-35rem);
+  }
+  100% {
+    transform: translateY(-0rem);
+  }
+}
+@keyframes paperUp {
+  0% {
+    transform: translateY(-20px);
+  }
+  5% {
+    transform: translateY(-20px);
+  }
+  30% {
+    transform: translateY(-60px);
+  }
+  45% {
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+@keyframes down {
+  0% {
+    height: 0%;
+  }
+  50% {
+    height: 48%;
+  }
+  100% {
+    height: 48%;
+  }
+}
+
+@keyframes up {
+  0% {
+    height: 48%;
+  }
+  100% {
+    height: 0%;
+  }
+}

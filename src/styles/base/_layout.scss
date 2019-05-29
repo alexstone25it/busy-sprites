@@ -1,0 +1,10 @@
+.grid {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  &__navbar {
+    grid-column: 1 / 2;
+  }
+  &__content {
+    grid-column: 2 / 3;
+  }
+}

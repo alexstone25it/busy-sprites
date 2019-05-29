@@ -1,9 +1,8 @@
 import React from "react";
-import styles from "./BusinessAddress.module.css";
 
 const BusinessAddress = () => {
   return (
-    <address className={styles.address}>
+    <address>
       Busy Sprites
       <br />
       house

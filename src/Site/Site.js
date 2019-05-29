@@ -36,26 +36,16 @@ class Site extends Component {
     }
   };
   render() {
-    const grid = {
-      display: "grid",
-      gridTemplateColumns: "20% 80%"
-    };
-    const gridNav = {
-      gridColumn: "1 / 2"
-    };
-    const gridInner = {
-      gridColumn: "2 / 3"
-    };
     return (
-      <div style={this.state.sideNav ? grid : null}>
+      <div className={this.state.sideNav ? "grid" : null}>
         {this.state.sideNav ? (
-          <div style={gridNav}>
+          <div className="grid__navbar">
             <SideNav />
           </div>
         ) : (
           <TopNav />
         )}
-        <div style={this.state.sideNav ? gridInner : null}>
+        <div className={this.state.sideNav ? "grid__content" : null}>
           <Route
             path="/"
             exact

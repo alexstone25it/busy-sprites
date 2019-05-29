@@ -1,0 +1,29 @@
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.btn:active {
+  box-shadow: none;
+}
+.btn-action-primary {
+  background-color: rgba($color-primary, 0.3);
+  font-weight: 100;
+  text-transform: uppercase;
+  text-shadow: -2px -2px 2px $color-secondary;
+  border: 3px solid $color-tertiary;
+  border-radius: 30px;
+}
+.btn-action-primary:hover,
+.btn-action-primary:focus {
+  box-shadow: -1px -1px 10px $color-tertiary, 0px 3px 7px $color-tertiary;
+}
+.btn-action-small {
+  align-self: center;
+
+  background-color: rgba(37, 37, 37, 0.2);
+
+  padding: 0rem 0.8rem 0.2rem 0.8rem;
+  border-radius: 50%;
+  box-shadow: 1px 1px 1px rgb(31, 6, 252), -1px -1px 1px rgb(31, 6, 252);
+}

@@ -1,41 +1,30 @@
 import React from "react";
 
-import MainWrapper from "../../../components/wrappers/mains/MainWrapper";
+import MainContainer from "../../../components/containers/mains/MainContainer";
 import PrimaryH2 from "../../../components/typography/text/headers/h2/PrimaryH2";
 import Brand from "../../../components/typography/branding/Brand";
-import DivWrapperEmphasis from "../../../components/wrappers/divs/divWrapperEmphasis/DivWrapperEmphasis";
-import EmphasisTxt from "../../../components/typography/text/paragraphs/EmphasisTxt/EmphasisTxt";
-import AccordionComponent from "../../../components/accordion/AccordionComponent";
+import DivWrapper from "../../../components/wrappers/DivWrapper";
+import PrimaryTxt from "../../../components/typography/text/text/PrimaryTxt";
+import Accordion from "../../../components/accordion/Accordion";
 
 import { SPECIALISMS_ARRAY } from "./DATA/SPECIALISMS_ARRAY";
 
-import {
-  MARGIN_TOP_FULL,
-  MARGIN_BOTTOM_FULL,
-  MARGIN_SIDES_FULL,
-  MARGIN_SIDES_AUTO
-} from "../PAGE_STYLES";
-
 const Services = () => (
-  <MainWrapper>
-    <PrimaryH2
-      pageStyles={Object.assign({}, MARGIN_TOP_FULL, MARGIN_BOTTOM_FULL)}
-    >
+  <MainContainer>
+    <PrimaryH2 alter="margins--top-full margins--bottom-full">
       Busy Sprites Services
     </PrimaryH2>
-    <DivWrapperEmphasis
-      pageStyles={Object.assign({}, MARGIN_BOTTOM_FULL, MARGIN_SIDES_AUTO)}
-    >
-      <EmphasisTxt>
+    <DivWrapper alter="wrapper-emphasis margins--bottom-full margins--lr-any">
+      <PrimaryTxt alter="txt-emphasis">
         From an idea to a finished product and beyond, <Brand /> consultants
         have the skills your business needs.
-      </EmphasisTxt>
-    </DivWrapperEmphasis>
-    <AccordionComponent
+      </PrimaryTxt>
+    </DivWrapper>
+    <Accordion
       dataArray={SPECIALISMS_ARRAY}
-      pageStyles={Object.assign({}, MARGIN_SIDES_FULL, MARGIN_BOTTOM_FULL)}
+      className="margins--right-full margins--left-full margins--bottom-full"
     />
-  </MainWrapper>
+  </MainContainer>
 );
 
 export default Services;

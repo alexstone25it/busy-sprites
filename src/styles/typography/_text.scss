@@ -1,0 +1,23 @@
+.txt-normal {
+  width: 65%;
+}
+.txt-emphasis {
+  font-weight: bolder;
+  letter-spacing: 0.7rem;
+  line-height: 4rem;
+  text-align: center;
+  text-shadow: 0px 2px 10px $color-primary;
+  text-transform: uppercase;
+}
+.txt-underline {
+  text-decoration: underline;
+}
+.txt-noted {
+  font-size: 1.4rem;
+}
+.txt-left {
+  text-align: left;
+}
+.txt-right {
+  text-align: right;
+}

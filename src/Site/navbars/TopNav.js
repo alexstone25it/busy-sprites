@@ -1,5 +1,4 @@
-import React, { Component } from "react";
-import styles from "./TopNav.module.css";
+import React, { Component, Fragment } from "react";
 
 import Logo from "../../components/logo/Logo";
 import NavList from "./navList/NavList";
@@ -15,21 +14,24 @@ class TopNav extends Component {
     });
   };
   render() {
-    return this.state.navOpen ? (
-      <nav className={styles.nav}>
-        <Logo />
-        <div className={styles.btnWrapper}>
-          <ButtonX onClick={this.toggleNavHandler} />
-        </div>
-        <NavList />
-      </nav>
-    ) : (
-      <nav>
-        <Logo />
-        <MenuButton onClick={this.toggleNavHandler} />
+    return (
+      <nav className="topNavbar">
+        {this.state.navOpen ? (
+          <Fragment>
+            <Logo />
+            <div className="topNavbar__btnWrapper">
+              <ButtonX onClick={this.toggleNavHandler} />
+            </div>
+            <NavList />
+          </Fragment>
+        ) : (
+          <Fragment>
+            <Logo />
+            <MenuButton onClick={this.toggleNavHandler} />
+          </Fragment>
+        )}
       </nav>
     );
   }
 }
-
 export default TopNav;

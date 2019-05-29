@@ -1,0 +1,21 @@
+.iconsBox {
+  &__wrapper {
+    border: 1px solid $color-tertiary;
+  }
+  &__text {
+    color: $color-tertiary;
+  }
+  &__container {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    align-items: baseline;
+    background-color: $color-tertiary;
+    padding: 2% 4%;
+  }
+  &__svg {
+    height: 4rem;
+
+    fill: $color-primary;
+  }
+}

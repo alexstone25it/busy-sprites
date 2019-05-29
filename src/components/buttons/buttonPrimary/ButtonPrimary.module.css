@@ -15,20 +15,7 @@
 .btn:hover {
   box-shadow: 1px 7px 12px rgb(255, 255, 255);
 }
-.btn:active {
-  box-shadow: none;
-}
-/*DIFFS*/
-.smallSquare {
-  font-size: 1.4rem;
-  padding: 1rem;
-}
-.thinOblong {
-  font-size: 1.8rem;
-  letter-spacing: 0.3rem;
-  line-height: 3rem;
-  padding: 1.5rem;
-}
+
 /*/////boxShadow/////*/
 .boxShadowBlue {
   box-shadow: 1px 5px 10px rgba(31, 6, 252, 0.8);

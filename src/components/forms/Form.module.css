@@ -1,9 +1,12 @@
 .form div {
   display: flex;
   flex-flow: column nowrap;
+  margin-bottom: 4.5%;
+}
+.form div:first-child {
+  margin-top: 4.5%;
 }
 .form div label {
-  font-size: 1.6rem;
 }
 .form div input {
   border: 1px solid rgb(31, 6, 252);
