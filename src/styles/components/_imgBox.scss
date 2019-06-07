@@ -1,0 +1,74 @@
+.imgBox {
+  @extend %wrapper--flex-col;
+  @extend %element--width-norm;
+  @extend %element--padding-norm;
+  align-items: stretch;
+
+  text-align: center;
+
+  border: 1px solid $color-primary;
+  border-radius: 10px;
+  margin: 4rem auto;
+
+  &__heading {
+    @extend %element--width-norm;
+    background-color: $color-tertiary;
+
+    text-align: center;
+    border: 2px solid $color-primary;
+    border-radius: 10px;
+    margin: 4rem auto;
+  }
+  &__content {
+    @extend %element--width-norm;
+    background-color: rgba($color-secondary, 0.6);
+    color: $color-tertiary;
+    text-shadow: -1px -1px 1px $color-primary, 1px 1px 1px $color-primary;
+
+    margin: 4rem auto;
+    border-radius: 10px;
+  }
+  & button {
+    margin: 4rem auto;
+  }
+}
+.imgMeeting {
+  background: linear-gradient(
+      rgba($color-primary, 0.2),
+      rgba($color-primary, 0.2)
+    ),
+    url(./assets/images/meeting.jpg);
+  @include background-image-fit;
+}
+.imgLaptop {
+  background: linear-gradient(
+      rgba($color-primary, 0.2),
+      rgba($color-primary, 0.2)
+    ),
+    url(./assets/images/laptop.jpg);
+  @include background-image-fit;
+}
+.imgCode {
+  background: linear-gradient(
+      rgba($color-primary, 0.2),
+      rgba($color-primary, 0.2)
+    ),
+    url(./assets/images/code.jpg);
+  @include background-image-fit;
+}
+.imgMotherboard {
+  background: linear-gradient(
+      rgba($color-primary, 0.2),
+      rgba($color-primary, 0.2)
+    ),
+    url(./assets/images/motherboard.jpg);
+  @include background-image-fit;
+}
+.imgOffice {
+  background: linear-gradient(
+      rgba($color-primary, 0.2),
+      rgba($color-primary, 0.2)
+    ),
+    url(./assets/images/office.jpg);
+  @include background-image-fit;
+}

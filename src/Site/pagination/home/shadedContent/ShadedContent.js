@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import styles from "./ShadedContent.module.css";
 
-import BoxedIdeas from "./boxedIdeas/BoxedIdeas";
+import ImgBox from "./imgBoxes/ImgBox";
 import BackText from "./backText/BackText";
 
 class ShadedContent extends Component {
@@ -42,14 +42,14 @@ class ShadedContent extends Component {
   render() {
     return this.state.extraInfoHidden ? (
       <div className={styles.transparent}>
-        <BoxedIdeas
+        <ImgBox
           onClick={this.showExtraInfo}
           hidden={this.state.extraInfoHidden}
         />
       </div>
     ) : (
       <div className={styles.shade} id="parentDiv">
-        <BoxedIdeas
+        <ImgBox
           onClick={this.showExtraInfo}
           hidden={this.state.extraInfoHidden}
         />

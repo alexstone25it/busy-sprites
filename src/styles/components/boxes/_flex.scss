@@ -1,0 +1,83 @@
+%wrapper--flex-row {
+  display: flex;
+  flex: 1;
+  flex-flow: row wrap;
+}
+/*
+wrapper--flex--row extended in:
+ accordion
+  iconsBox
+  form
+  modal
+  portraits
+ */
+%wrapper--flex-col {
+  display: flex;
+  flex: 1;
+  flex-flow: column nowrap;
+}
+/*wrapper--flex-col extended in: 
+accordion
+footer
+form
+imgBox
+jumotron1
+modal
+primaryH1
+secondaryh2
+sideNavbar
+topNavbar
+*/
+.flex--col {
+  @extend %wrapper--flex-col;
+}
+/*
+flex--col used in:
+about
+home
+contact
+*/
+.flex--row {
+  @extend %wrapper--flex-row;
+}
+.container--emphasis {
+  @extend %wrapper--flex-col;
+  @extend %element--width-norm;
+  justify-content: center;
+
+  background-color: $color-tertiary;
+  padding: 2rem;
+  border: 1px solid $color-primary;
+  border-radius: 10px;
+}
+/*
+container--emphasis used in:
+emphasisContainer
+*/
+.container--outlined-row {
+  @extend %wrapper--flex-row;
+  @extend %element--width-norm;
+  justify-content: space-around;
+  align-items: baseline;
+
+  background-color: $color-tertiary;
+  border: 1px solid $color-primary;
+  border-radius: 10px;
+}
+/*
+container--outlined-row used in:
+OutlinedContainer
+*/
+.container--outlined-col {
+  @extend %element--width-norm;
+  @extend %wrapper--flex-col;
+  justify-content: center;
+
+  background-color: $color-tertiary;
+  border: 1px solid $color-primary;
+  border-radius: 10px;
+}
+/*
+container--outlined-col used in:
+OutlinedContainer
+*/

@@ -14,7 +14,12 @@ const successBorder = {
 const FormInputGroup = props => {
   return props.inputGroups.map(inputGroup => (
     <div key={inputGroup.key}>
-      <label htmlFor={inputGroup.for}>{inputGroup.labelText}</label>
+      <label
+        htmlFor={inputGroup.for}
+        style={inputGroup.showLabel === true ? null : { display: "none" }}
+      >
+        {inputGroup.labelText}
+      </label>
       <input
         style={
           inputGroup.hasOwnProperty("formError") &&
@@ -32,7 +37,7 @@ const FormInputGroup = props => {
         }
         type={inputGroup.type}
         name={inputGroup.name}
-        placeholder={inputGroup.placeholder}
+        placeholder={inputGroup.showPlaceholder ? inputGroup.placeholder : null}
         value={props[inputGroup.name]}
         required={inputGroup.required}
         onChange={props.onChange}

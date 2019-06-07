@@ -1,21 +1,38 @@
-@import "styles/base/reset";
 @import "styles/base/variables";
-@import "styles/base/layout";
-@import "styles/base/spacing";
+@import "styles/base/mixins";
+
 @import "styles/base/animations";
+@import "styles/base/layout";
+@import "styles/base/reset";
+@import "styles/base/spacing";
+
+@import "styles/components/boxes/flex";
+@import "styles/components/boxes/grid";
 
 @import "styles/colors/bgColors";
 @import "styles/colors/txtColors";
 
+@import "styles/components/forms/forms";
+
+@import "styles/components/loaders/circleSpinner";
+
+@import "styles/components/accordion";
+@import "styles/components/brand";
+@import "styles/components/buttons";
+@import "styles/components/errorComponent";
+@import "styles/components/footer";
+@import "styles/components/gridPicSet";
+@import "styles/components/iconsBox";
+@import "styles/components/imgBox";
+@import "styles/components/jumbotrons";
+@import "styles/components/links";
+@import "styles/components/logo";
+@import "styles/components/modal";
+@import "styles/components/navbar";
+@import "styles/components/portraits";
+
+@import "styles/typography/headings/h1s";
+@import "styles/typography/headings/h2s";
+@import "styles/typography/headings/h3s";
 @import "styles/typography/baseFonts";
 @import "styles/typography/text";
-@import "styles/typography/headings";
-
-@import "styles/components/iconsBox";
-@import "styles/components/accordion";
-@import "styles/components/footer";
-@import "styles/components/navbar";
-@import "styles/components/logo";
-@import "styles/components/buttons";
-@import "styles/components/links";
-@import "styles/components/wrappers";

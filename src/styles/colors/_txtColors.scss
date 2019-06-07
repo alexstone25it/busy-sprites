@@ -1,11 +1,17 @@
-p {
+body {
   color: $color-secondary;
 }
-
-.txt-light {
+label,
+input {
+  color: $color-secondary;
+}
+%txt--color-light {
   color: $color-tertiary;
 }
+.txt--light {
+  @extend %txt--color-light;
+}
 
-.txt-colored {
+.txt--colored {
   color: $color-primary;
 }

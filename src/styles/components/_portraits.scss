@@ -1,0 +1,25 @@
+.portraits {
+  @extend %wrapper--flex-row;
+
+  max-width: 75%;
+
+  font-size: 1.4rem;
+
+  margin: auto;
+  & figure {
+    max-width: 20%;
+  }
+  & header h6 {
+    font-size: inherit;
+  }
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 50%;
+  }
+  & figcaption {
+    font-size: inherit;
+  }
+}

@@ -1,8 +1,7 @@
 import React from "react";
-import styles from "./ButtonX.module.css";
 
 const ButtonX = props => (
-  <button className={styles.bigX} onClick={props.onClick}>
+  <button className="btn--x" onClick={props.onClick}>
     &times;
   </button>
 );

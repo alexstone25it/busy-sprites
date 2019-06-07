@@ -1,3 +1,15 @@
 body {
   background-color: $color-light;
 }
+%bg--primary {
+  background-color: $color-primary;
+}
+/*extended in:
+ buttonWithColor
+*/
+.bg--primary {
+  @extend %bg--primary;
+}
+.bg--tertiary {
+  background-color: $color-tertiary;
+}

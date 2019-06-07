@@ -6,8 +6,7 @@
     color: $color-tertiary;
   }
   &__container {
-    display: flex;
-    flex: 1;
+    @extend %wrapper--flex-row;
     justify-content: space-around;
     align-items: baseline;
     background-color: $color-tertiary;

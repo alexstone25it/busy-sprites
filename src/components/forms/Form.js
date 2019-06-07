@@ -1,9 +1,7 @@
 import React, { Component } from "react";
-import styles from "./Form.module.css";
 
-import ButtonPrimary from "../buttons/buttonPrimary/ButtonPrimary";
 import FormInputGroup from "./formComponents/FormInputGroup";
-import CircleSpinner from "../loaders/circle/CircleSpinner";
+import Loader from "../loaders/Loader";
 import ErrorComponent from "../transients/ErrorComponent";
 import SuccessComponent from "../transients/SuccessComponent";
 
@@ -136,17 +134,12 @@ class Form extends Component {
   };
   render() {
     let formFooter = (
-      <ButtonPrimary
-        diffs="smallSquare"
-        boxShadow="boxShadowBlue"
-        type="submit"
-        value="Submit"
-      >
+      <button type="submit" value="Submit">
         Send
-      </ButtonPrimary>
+      </button>
     );
     if (this.state.isLoading) {
-      formFooter = <CircleSpinner />;
+      formFooter = <Loader className="circleSpinner" />;
     }
     if (this.state.hasError) {
       formFooter = (
@@ -163,7 +156,7 @@ class Form extends Component {
       );
     }
     return (
-      <form onSubmit={this.onSubmitHandler} className={styles.form}>
+      <form onSubmit={this.onSubmitHandler}>
         <FormInputGroup
           inputGroups={this.props.formInputGroups}
           onChange={this.onChangeHandler}

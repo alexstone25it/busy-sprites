@@ -1,29 +1,30 @@
 import React from "react";
 
-import MainContainer from "../../../components/containers/mains/MainContainer";
-
-import DivWrapper from "../../../components/wrappers/DivWrapper";
-import PrimaryTxt from "../../../components/typography/text/text/PrimaryTxt";
+import EmphasisContainer from "../../../components/boxes/EmphasisContainer";
+import NormalTxt from "../../../components/typography/text/text/NormalTxt";
+import EmphasisTxt from "../../../components/typography/text/text/EmphasisTxt";
 import Shading from "./shadedContent/ShadedContent";
 import Brand from "../../../components/typography/branding/Brand";
 
 const Home = () => (
-  <MainContainer>
-    <DivWrapper alter="wrapper-col wrapper-emphasis margins--top-full margins--bottom-full margins--lr-any">
-      <PrimaryTxt alter="txt-emphasis">
+  <main className="flex--col margins--top-full margins--bottom-full">
+    <EmphasisContainer alter="margins--bottom-full margins--lr-any">
+      <EmphasisTxt>
         The only stop needed for all your technology needs.
-      </PrimaryTxt>
-    </DivWrapper>
-    <PrimaryTxt alter="txt-normal margins--bottom-half margins--lr-any">
-      Thought, design, application, security and support for businesses large
-      and small.
-    </PrimaryTxt>
-    <Shading />
-    <PrimaryTxt alter="txt-normal margins--top-half margins--lr-any">
-      A complete service by <br />
-      <Brand />.
-    </PrimaryTxt>
-  </MainContainer>
+      </EmphasisTxt>
+    </EmphasisContainer>
+    <section>
+      <NormalTxt alter="margins--bottom-full margins--lr-any">
+        Thought, design, application, security and support for businesses large
+        and small.
+      </NormalTxt>
+      <Shading />
+      <NormalTxt alter=" margins--top-full margins--lr-any">
+        A complete service by <br />
+        <Brand />.
+      </NormalTxt>
+    </section>
+  </main>
 );
 
 export default Home;

@@ -1,0 +1,67 @@
+.modal {
+  &__background {
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba($color-primary, 0.5);
+
+    z-index: 2;
+    @media (min-width: 600px) {
+      padding-left: 20%;
+    }
+  }
+  &__container {
+    @extend %wrapper--flex-col;
+    max-width: 95%;
+    background-color: $color-tertiary;
+
+    border: 5px solid $color-tertiary;
+    margin: 50% auto;
+    animation: moveDown 1s;
+    @media (min-width: 350px) {
+      max-width: 75%;
+      margin: 35% auto;
+    }
+    @media (min-width: 550px) {
+      margin: 20% auto;
+    }
+    @media (min-width: 600px) {
+      max-width: 75%;
+    }
+    @media (min-width: 850px) {
+      max-width: 50%;
+    }
+    @media (min-width: 1250px) {
+      max-width: 40%;
+    }
+  }
+  &__head {
+    @extend %wrapper--flex-row;
+    justify-content: space-around;
+    align-items: baseline;
+    height: 4rem;
+
+    background-color: rgba($color-primary, 0.9);
+
+    padding: 2rem;
+    @keyframes moveDown {
+      0% {
+        transform: translateY(-500%);
+      }
+    }
+
+    &__title {
+      color: $color-tertiary;
+      font-size: 2rem;
+    }
+  }
+  &__body {
+    @extend %wrapper--flex-col;
+
+    padding: 2%;
+  }
+}

@@ -1,19 +1,23 @@
 .footer {
-  display: flex;
-  flex: 1;
-  flex-flow: column nowrap;
+  @extend %wrapper--flex-col;
   background: linear-gradient(to top, $color-secondary, $color-primary);
   color: $color-tertiary;
 
   padding: 4%;
-}
-.footer > div {
-  min-width: 100%;
-  align-self: center;
-  @media (min-width: 400px) {
-    min-width: 80%;
+  & div {
+    min-width: 100%;
+    align-self: center;
+    @media (min-width: 400px) {
+      min-width: 80%;
+    }
+    @media (min-width: 800px) {
+      min-width: 40%;
+    }
   }
-  @media (min-width: 800px) {
-    min-width: 40%;
+  & a {
+    color: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
   }
 }

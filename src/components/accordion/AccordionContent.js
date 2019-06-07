@@ -1,15 +1,18 @@
 import React from "react";
 
-import ButtonAction from "../buttons/buttonAction/buttonAction";
+import ButtonSmall from "../buttons/buttonSmall/ButtonSmall";
 
 const AccordionContent = props => (
   <div className="accordion__content">
-    <div className="accordion__head">
-      <h4>{props.item.name}</h4>
-      <ButtonAction alter="btn-action-small" onClick={props.toggleAccordion}>
+    <header className="accordion__head">
+      <h2>{props.item.name}</h2>
+      <ButtonSmall
+        alter="bg--primary txt--light"
+        onClick={props.toggleAccordion}
+      >
         +
-      </ButtonAction>
-    </div>
+      </ButtonSmall>
+    </header>
     <div className="accordion__body--closed">
       <ul className="accordion__body--list">
         {props.item.contents.map(item => {

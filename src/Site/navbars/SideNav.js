@@ -4,7 +4,7 @@ import Logo from "../../components/logo/Logo";
 import NavList from "./navList/NavList";
 
 const SideNav = () => (
-  <nav className="sideNavbar">
+  <nav role="navigation" className="sideNavbar">
     <Logo />
     <NavList />
   </nav>

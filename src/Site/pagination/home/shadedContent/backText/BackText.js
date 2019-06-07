@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./BackText.module.css";
 
-import ButtonAction from "../../../../../components/buttons/buttonAction/buttonAction";
+import Button from "../../../../../components/buttons/button/Button";
 
 const BackText = props => {
   const tar = props.target;
@@ -25,12 +25,9 @@ const BackText = props => {
   return (
     <div className={styles.info}>
       <p>{correctInfo}</p>
-      <ButtonAction
-        alter="btn-action-primary padding-norm txt-light"
-        onClick={props.hideExtraInfo}
-      >
+      <Button alter="txt--light" onClick={props.hideExtraInfo}>
         Know Less
-      </ButtonAction>
+      </Button>
     </div>
   );
 };

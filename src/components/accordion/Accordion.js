@@ -11,12 +11,12 @@ class Accordion extends Component {
       accordionBtn.innerText = `-`;
     } else {
       accordionBody.className = "accordion__body--closed";
-      accordionBtn.innerText = "+";
+      accordionBtn.innerText = `+`;
     }
   };
   render() {
     return (
-      <div className="accordion">
+      <section className="accordion">
         {this.props.dataArray.map(item => (
           <AccordionContent
             item={item}
@@ -24,7 +24,7 @@ class Accordion extends Component {
             toggleAccordion={this.toggleAccordionHandler}
           />
         ))}
-      </div>
+      </section>
     );
   }
 }

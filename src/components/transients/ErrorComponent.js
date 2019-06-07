@@ -1,9 +1,8 @@
 import React from "react";
-import styles from "./ErrorComponent.module.css";
 import ButtonX from "../buttons/buttonX/ButtonX";
 
 const ErrorComponent = ({ errorComponentMessage }) => (
-  <div className={styles.wrapper}>
+  <div className="errorComponent">
     <h4>{errorComponentMessage}</h4>
     <ButtonX />
   </div>

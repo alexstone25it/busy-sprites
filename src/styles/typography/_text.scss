@@ -1,23 +1,50 @@
-.txt-normal {
+.txt--normal {
   width: 65%;
 }
-.txt-emphasis {
+/*
+txt--normal used in:
+NormalTxt
+*/
+.txt--emphasis {
   font-weight: bolder;
   letter-spacing: 0.7rem;
   line-height: 4rem;
-  text-align: center;
   text-shadow: 0px 2px 10px $color-primary;
   text-transform: uppercase;
 }
-.txt-underline {
+/*
+txt--emphasis used in:
+EmphasisTxt
+*/
+.txt--jumbo {
+  font-size: 2rem;
+  letter-spacing: 0.7rem;
+  line-height: 4rem;
+  text-align: center;
+  @media (min-width: 600px) {
+    font-size: 2.5rem;
+  }
+}
+/*
+.txt--jumbo used in:
+jumbotron1
+*/
+.txt--underline {
   text-decoration: underline;
 }
-.txt-noted {
+.txt--noted {
   font-size: 1.4rem;
 }
-.txt-left {
+/*
+txt-noted used in:
+SmallTxt
+*/
+.txt--center {
+  text-align: center;
+}
+.txt--left {
   text-align: left;
 }
-.txt-right {
+.txt--right {
   text-align: right;
 }

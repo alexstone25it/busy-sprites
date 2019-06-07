@@ -5,7 +5,7 @@ import SvgTwitter from "../../assets/icons/svg/Twitter";
 
 const IconsBox = () => {
   return (
-    <div className="iconsBox__wrapper">
+    <section className="iconsBox__wrapper">
       <p className="iconsBox__text">Social Media</p>
       <div className="iconsBox__container">
         <a href="/">
@@ -18,7 +18,7 @@ const IconsBox = () => {
           <SvgLinkedIn />
         </a>
       </div>
-    </div>
+    </section>
   );
 };
 export default IconsBox;

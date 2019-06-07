@@ -1,0 +1,10 @@
+.primaryH2 {
+  display: flex;
+  text-shadow: 0px 1px 1px $color-primary;
+  margin-left: 5%;
+}
+@media (min-width: 600px) {
+  .primaryH2 {
+    margin-left: 10%;
+  }
+}

@@ -1,0 +1,24 @@
+.jumbotron1 {
+  @extend %wrapper--flex-col;
+  align-items: stretch;
+
+  width: 100%;
+  &__txt {
+    background: linear-gradient(
+      to bottom,
+      $color-secondary 20%,
+      $color-primary 70%,
+      $color-light 95%
+    );
+    color: $color-tertiary;
+
+    text-shadow: 1px 1px 1px $color-secondary;
+    text-align: center;
+
+    padding: 4% 4% 12% 4%;
+
+    @media (min-width: 600px) {
+      padding: 9%;
+    }
+  }
+}

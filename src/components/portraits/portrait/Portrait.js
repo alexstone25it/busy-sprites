@@ -1,17 +1,18 @@
 import React from "react";
-import styles from "./Portrait.module.css";
 
 const Portrait = ({ item }) => (
-  <div className={styles.wrapper}>
+  <figure>
+    <header>
+      <h6>{item.name}</h6>
+    </header>
     <img
       src={require(`../../../assets/images/${item.src}.jpg`)}
       alt={item.alt}
     />
-    <details>
-      <summary>{item.name}</summary>
-      <p>{item.text}</p>
-    </details>
-  </div>
+    <footer>
+      <figcaption>{item.text}</figcaption>
+    </footer>
+  </figure>
 );
 
 export default Portrait;

@@ -1,0 +1,13 @@
+form {
+  @extend %wrapper--flex-col;
+  justify-content: center;
+  & div {
+    @extend %wrapper--flex-row;
+    justify-content: space-evenly;
+    margin: 2% 4%;
+  }
+  & button {
+    @extend %btn--prime-fullColor;
+    @extend %txt--color-light;
+  }
+}

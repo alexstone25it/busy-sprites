@@ -1,10 +1,9 @@
 import React from "react";
-import styles from "./PrimaryH3.module.css";
 
 const PrimaryH3 = props => (
-  <h3 className={styles.txt} style={props.pageStyles}>
-    {props.children}
-  </h3>
+  <header>
+    <h3 className={["primaryH3", [props.alter]].join(" ")}>{props.children}</h3>
+  </header>
 );
 
 export default PrimaryH3;

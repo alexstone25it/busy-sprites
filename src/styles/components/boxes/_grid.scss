@@ -1,0 +1,20 @@
+%wrapper--grid {
+  display: grid;
+}
+.grid--small {
+  @extend %wrapper--grid;
+  grid-template-columns: 1fr 1fr;
+}
+%grid--large {
+  @extend %wrapper--grid;
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 1.5rem;
+}
+/*
+grid--large extended in:
+gridPicSet
+*/
+.grid--large {
+  @extend %grid--large;
+}

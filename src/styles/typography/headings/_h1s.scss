@@ -1,0 +1,50 @@
+.primaryH1 {
+  position: relative;
+  filter: contrast(150%);
+
+  &__imgWrapper {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    background: $color-primary;
+    background: linear-gradient(
+        rgba($color-primary, 0.3),
+        rgba($color-primary, 0.3)
+      ),
+      url("./assets/images/tech.jpg");
+    @include background-image-fit;
+  }
+  &__txt {
+    @extend %wrapper--flex-col;
+    align-items: center;
+    justify-items: center;
+
+    color: $color-tertiary;
+
+    text-shadow: 1px 1px 1px $color-secondary,
+      -85px -10px 5px rgba($color-primary, 0.3);
+
+    padding: 4%;
+  }
+}
+.secondaryH1 {
+  @extend %wrapper--flex-col;
+  width: 100%;
+  align-items: center;
+  justify-items: center;
+
+  background: linear-gradient(
+    to bottom,
+    $color-secondary 20%,
+    $color-primary 70%,
+    $color-light 95%
+  );
+  color: $color-tertiary;
+
+  text-shadow: 3px 5px 1px $color-secondary, -3px -3px 5px $color-primary;
+
+  padding: 6%;
+}

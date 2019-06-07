@@ -1,3 +1,35 @@
+%element--width-wide {
+  max-width: 100%;
+}
+%element--width-norm {
+  max-width: calc(100% - 4rem);
+  @media (min-width: 600px) {
+    max-width: 80%;
+  }
+  @media (min-width: 900px) {
+    max-width: 85%;
+  }
+}
+.width--norm {
+  @extend %element--width-norm;
+}
+/*
+element--width-norm extended in:
+imgBox
+*/
+%element--width-small {
+  max-width: 75%;
+}
+.width--small {
+  @extend %element--width-small;
+}
+
+%element--width-smaller {
+  max-width: 65%;
+}
+.width--smaller {
+  @extend %element--width-smaller;
+}
 .margins {
   &--top {
     &-half {
@@ -50,6 +82,17 @@
     }
   }
 }
-.padding-norm {
+%element--padding-norm {
   padding: 2% 4%;
 }
+/*
+padding-norm extended in:
+imgBox
+*/
+.padding-norm {
+  @extend %element--padding-norm;
+}
+/*
+padding-norm used in: 
+BoxedTxt
+*/

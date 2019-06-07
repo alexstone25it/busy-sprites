@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, withRouter } from "react-router-dom";
 
 import SideNav from "./navbars/SideNav";
 import TopNav from "./navbars/TopNav";
-import Jumbotron from "../components/jumbotron/Jumbotron";
-import PrimaryH1 from "../components/typography/text/headers/h1/primaryH1/PrimaryH1";
-import SecondaryH1 from "../components/typography/text/headers/h1/secondaryH1/SecondaryH1";
+import Jumbotron1 from "../components/jumbotron/Jumbotron1";
+import PrimaryH1 from "../components/typography/text/headers/h1/PrimaryH1";
+import SecondaryH1 from "../components/typography/text/headers/h1/SecondaryH1";
 import Home from "./pagination/home/Home";
 import About from "./pagination/about/About";
 import Services from "./pagination/services/Services";
@@ -22,6 +22,11 @@ class Site extends Component {
   componentDidMount() {
     this.widthResizeHandler();
     window.addEventListener("resize", this.widthResizeHandler);
+  }
+  componentDidUpdate(prevProps) {
+    if (this.props.location.pathname !== prevProps.location.pathname) {
+      window.scrollTo(0, 0);
+    }
   }
   componentWillUnmount() {
     window.removeEventListener("resize", this.widthResizeHandler);
@@ -49,7 +54,7 @@ class Site extends Component {
           <Route
             path="/"
             exact
-            component={() => <Jumbotron text={MISSION_STATEMENT} />}
+            component={() => <Jumbotron1 text={MISSION_STATEMENT} />}
           />
           <Switch>
             <Route path="/" exact component={PrimaryH1} />
@@ -68,4 +73,4 @@ class Site extends Component {
   }
 }
 
-export default Site;
+export default withRouter(Site);

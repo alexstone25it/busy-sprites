@@ -1,29 +1,95 @@
-.btn {
+%btn {
   display: inline-block;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+
+  &:active {
+    box-shadow: none;
+  }
 }
-.btn:active {
-  box-shadow: none;
-}
-.btn-action-primary {
-  background-color: rgba($color-primary, 0.3);
+%btn--prime {
+  @extend %btn;
+  @extend %element--padding-norm;
+
   font-weight: 100;
   text-transform: uppercase;
   text-shadow: -2px -2px 2px $color-secondary;
-  border: 3px solid $color-tertiary;
   border-radius: 30px;
 }
-.btn-action-primary:hover,
-.btn-action-primary:focus {
-  box-shadow: -1px -1px 10px $color-tertiary, 0px 3px 7px $color-tertiary;
+.btn--primary {
+  @extend %btn--prime;
+  background-color: rgba($color-primary, 0.3);
+
+  border: 3px solid $color-tertiary;
+  &:hover,
+  &:focus {
+    box-shadow: -1px -1px 10px $color-tertiary, 0px 3px 7px $color-tertiary;
+  }
 }
-.btn-action-small {
+/*btn--primary used in:
+Button*/
+%btn--prime-fullColor {
+  @extend %btn--prime;
+  background-color: $color-primary;
+  padding: 1rem 4rem;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+/*
+used in: 
+form 
+contact
+*/
+.btn--primary-fullColor {
+  @extend %btn--prime-fullColor;
+}
+.btn--small {
+  @extend %btn;
   align-self: center;
 
-  background-color: rgba(37, 37, 37, 0.2);
-
+  font-weight: 100;
+  text-transform: uppercase;
   padding: 0rem 0.8rem 0.2rem 0.8rem;
   border-radius: 50%;
-  box-shadow: 1px 1px 1px rgb(31, 6, 252), -1px -1px 1px rgb(31, 6, 252);
+  border: 1px solid $color-tertiary;
+  box-shadow: 1px 1px 1px $color-primary, -1px -1px 1px $color-primary;
+  &:hover,
+  &:focus {
+    box-shadow: -1px -1px 10px $color-primary, 0px 3px 7px $color-primary;
+  }
 }
+/*
+btn--small used in:
+ ButtonSmall
+*/
+.btn--menu {
+  @extend %btn;
+  background-color: $color-secondary;
+  color: $color-tertiary;
+
+  padding: 1.5rem 2.5rem;
+
+  border: 3px solid $color-tertiary;
+  border-radius: 50%;
+  &:hover,
+  &:focus {
+    box-shadow: 0px 3px 8px 5px $color-tertiary;
+  }
+}
+/*btn--menu used in: 
+ButtonMenu
+*/
+.btn--x {
+  @extend %btn;
+  background-color: transparent;
+  color: $color-tertiary;
+  font-size: 4rem;
+  padding: 3rem;
+  border-radius: 50px;
+
+  animation: appear 0.3s linear;
+}
+/*
+btn--x used in:
+ButtonX
+*/
